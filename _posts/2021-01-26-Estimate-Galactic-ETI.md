@@ -8,20 +8,23 @@ title: Estimate Milky Way Extraterrestrial Intelligence
 
 This weekend at the request of [an American science fiction](https://www.amazon.com/Lancer-Kind/e/B0045CYDG6%3F) author I read "[A Statistical Estimation of the Occurrence of Extraterrestrial Intelligence in the Milky Way Galaxy](https://arxiv.org/pdf/2012.07902.pdf)." This paper (by Xiang Cai, Jonathan H. Jiang, Kristen A. Fahy, and Yuk L. Yung) suggests where in our galaxy we might be likely to find intelligent life. This result can inform a search for extraterrestrial intelligence ([SETI](https://seti.org/)).
 
-Further, the paper concludes that the "probability of self-annihilation... [is] the most influential parameter determining the quantity and age of galactic intelligent life." This second point strengthens [Robin Hanson](https://economics.gmu.edu/people/rhanson)'s [Great Filter](http://mason.gmu.edu/~rhanson/greatfilter.html) argument:
+The results also inform study of [Robin Hanson](https://economics.gmu.edu/people/rhanson)'s [Great Filter](http://mason.gmu.edu/~rhanson/greatfilter.html) puzzle:
 
 > No alien civilizations have substantially colonized our solar system or systems nearby. Thus among the billion trillion stars in our past universe, none has reached the level of technology and growth that we may soon reach. This one data point implies that a Great Filter stands between ordinary dead matter and advanced exploding lasting life. And the big question is: How far along this filter are we?
+
+The paper concludes that the "probability of self-annihilation... [is] the most influential parameter determining the quantity and age of galactic intelligent life." This second point suggests what area of the Great Filter we would best study much more carefully: social science.
+
 
 The paper includes both astrophysical and biological viewpoints. And unlike previous work such as [the Drake equation](https://www.pbs.org/wgbh/nova/origins/drake.html), this research includes space and time variables, estimating the formation of Sun-like stars, Earth-like planets, and living organisms in the disk of the Milky Way; and simulating galactic history from the Big Bang to 20 billion or even 50 billion years later, in million-year increments. Each major factor has its own rate or probability:
 
 * **matter**: Sun-like stars have between 0.8 and 1.2 times the mass of our Sun, and Earth-like planets have similar size, sunlight, and length of year to the Earth;
 * **life**: the likelihood of life arising--abiogenesis;
 * **mind**: sufficient time for the evolution of intelligence; and
-* **culture**: probability of self-annihilation of complex life.
+* **culture**: probability of self-annihilation of complex life (section 2.5).
 
 Across this span of space and time, the Monte Carlo simulation includes the formation of supernovas that cause land-based life to go extinct on nearby planets. (The Monte Carlo simulation uses for the emergence of life the well-known Poisson distribution, which appears in analyses of call centers, stars in space, traffic flows, wrongful convictions, and many more applications.)
 
-This simulation permits sensitivity analysis, varying each major factor across a range of reasonable values, to determine which has the greatest effect. And it was the last major factor--the risk of self-destruction--that had the most influence on how much extraterrestrial intelligence we could expect in the Milky Way.
+This simulation permits sensitivity analysis, varying each major factor across a range of reasonable values, to determine which has the greatest effect. And it was the last major factor--the risk of self-destruction--that had the most influence on how much extraterrestrial intelligence we could expect in the Milky Way. (Figure 1 shows a difference of six orders of magnitude across three different probability assumptions.)
 
 This analysis is quantitative, deducing its conclusions from simulating a range of empirically observed values. Its target audience is no doubt the scientific community, and its third-person writing includes phrases like "self-annihilation" (mentioned in the introduction) and "sterilizing events" (meaning mass extinction due to supernovas).
 
@@ -42,7 +45,9 @@ I am reminded of the the [Doomsday Clock](https://www.wired.co.uk/article/what-i
 
 [One estimate](https://theconversation.com/doomsday-clock-moves-closer-to-midnight-but-can-we-really-predict-the-end-of-the-world-36632) of the probability of just the first of these threats, nuclear war, puts it at 1.4% per year, or at least somewhere between 0.036% and 5.1%. These numbers would make the "probability of self-annihilation of complex life" indistinguishable from 100% over the million-year time-step of the simulation. (Indeed anatomically modern [humans](https://www.bighistoryproject.com/chapters/4#intro) have only been around hundreds of thousands of years; complex civilization, only tens of thousands of years; and writing and saving knowledge, only thousands of years.)
 
-So if the chance of self-destruction is the factor that most influences the maturity and number of intelligences, then understanding the development of (peaceful) culture can not only help humanity survive, but also tell us what kind of civilization to expect in our galaxy. To cultural development, though, requires more than quantitative hypothetico-deductive reasoning from empirical data. If I were to talk to an author and suggest future work, I would suggest a multi-method eclectic approach, adding qualitative methods to the quantitative methods in the paper.
+So if the chance of self-destruction is the factor that most influences the maturity and number of intelligences, then understanding the development of (peaceful) culture can not only help humanity survive, but also tell us what kind of civilization to expect in our galaxy. To study cultural development, though, requires more than quantitative hypothetico-deductive reasoning from empirical data. If I were to talk to an author and suggest future work, I would suggest a multi-method eclectic approach, adding qualitative methods to the quantitative methods in the paper. As Robin Hanson says:
+
+> First, let us keep in mind the interdisciplinary nature of the this puzzle. While it may comforting for each discipline to claim that the Filter must surely lie in some other discipline of (in their eyes) lessor repute, such claims should surely be backed up by detailed analysis using our best understanding of that discipline.
 
 General Systems Theory suggests that the development--whether of a star or a person or a galactic civilization--proceeds "not only by incremental, additive change (polar variables), but by phasic change (qualitative milestones)." What we would need, then, is a set of paths for the lifecycle of a civilization, similar to the "main sequence" lifetime of stars modeled in the paper[^2]:
 
