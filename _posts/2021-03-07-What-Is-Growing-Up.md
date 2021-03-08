@@ -55,7 +55,7 @@ These decades of application and research have shown developmental stage to be a
 * conscious preoccupations, and
 * interpersonal style.
 
-Favorable personality characteristics associated with developmental stage include nurturance, conscientiousness, trust, tolerance, interpersonal senstivity, psychological mindedness, creativity, moral development, and a variety of measures related to mental health.[^16]
+Favorable personality characteristics associated with developmental stage include nurturance, conscientiousness, trust, tolerance, interpersonal sensitivity, psychological mindedness, creativity, moral development, and a variety of measures related to mental health.[^16]
 
 ## Horizontal and Vertical Goals
 
