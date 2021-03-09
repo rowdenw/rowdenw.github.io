@@ -8,11 +8,11 @@ title: What Is "Growing Up"?
 
 ## Adult Development
 
-What is it I wonder about "growing up"? By "growing up," I mean to distinguish advancement in a person's thinking capability  (vertical development) from adding of more knowledge, skills, and competencies (horizontal development). There is a difference between *how you think* and *what you know*. I wonder about the ability to think in more complex, systemic, strategic, and interdependent ways. [^1]
+What is it I wonder about "growing up"? By "growing up," I mean to distinguish advancement in a person's thinking capability  (vertical development) from adding of more knowledge, skills, and competencies (horizontal development). There is a difference between *how you think* and *what you know*. I wonder about the ability to think in more complex, systemic, strategic, and interdependent ways.[^1]
 
-There have been decades of scientific research into "growing up," in the field of adult development psychology. In the words of one of researcher, [Susanne Cook-Greuter](http://www.cook-greuter.com/Background.htm), adult development [^2] 
+There have been decades of scientific research into "growing up," in the field of adult development psychology. In the words of one of researcher, [Susanne Cook-Greuter](http://www.cook-greuter.com/Background.htm),[^2] adult development
 
-> describes the unfolding of human potential towards deeper understanding, wisdom, and effectiveness in the world. Growth occurs in a logical sequence of stages or expanding world views from birth to adulthood…. Overall, world views evolve from simple to complex, from static to dynamic, and from ego-centric to socio-centric to world-centric. Later stages are reached only by journeying through the earlier stages…. Each later stage in the sequence is more differentiated, integrated, flexible and capable of optimally functioning in a rapidly changing and ever more complex world. [^3]
+> describes the unfolding of human potential towards deeper understanding, wisdom, and effectiveness in the world. Growth occurs in a logical sequence of stages or expanding world views from birth to adulthood…. Overall, world views evolve from simple to complex, from static to dynamic, and from ego-centric to socio-centric to world-centric. Later stages are reached only by journeying through the earlier stages…. Each later stage in the sequence is more differentiated, integrated, flexible and capable of optimally functioning in a rapidly changing and ever more complex world.[^3]
 
 <div class="mermaid">
 gantt
@@ -38,24 +38,24 @@ gantt
 
 ## Decades of Application and Research
 
-Susanne Cook-Greuter based her research on a psychometric profile--a sentence completion "test"--called the Washington University Sentence Completion Test (SCT), published in _Measuring Ego Development_ (1970), _Ego Development_ (1976), and _Measuring Ego Development_ 2nd edition (1996) by Jane Loevinger. [^4]  [^5]  [^6] 
+Susanne Cook-Greuter based her research[^4] on a psychometric profile--a sentence completion "test"--called the Washington University Sentence Completion Test (SCT), published in _Measuring Ego Development_ (1970),[^5] _Ego Development_ (1976), and _Measuring Ego Development_ 2nd edition (1996)[^6] by Jane Loevinger.
 
-Loevinger's research influenced several subsequent developmentalists. [Bill Torbert](http://www.williamrtorbert.com/about-bill-torbert/bill-torbert/), while developing theories of scientific progress and organizational development, determined that the most psychometrically valid and demanding measure of whether persons transform their way of interpreting and acting in the world was Loevinger’s SCT. [^7] Bill Torbert's 1972 course, "Toward and Action Science," acquainted [Bill Joiner](https://changewise.biz/?page_id=249&..) with the field, leading to a research paper, training in scoring Loevinger’s SCT, larger and longer research projects on leadership development, and eventually a book, _Leadership Agility_ (2006). [^8]
+Loevinger's research influenced several subsequent developmentalists. [Bill Torbert](http://www.williamrtorbert.com/about-bill-torbert/bill-torbert/), while developing theories of scientific progress and organizational development, determined that the most psychometrically valid and demanding measure of whether persons transform their way of interpreting and acting in the world was Loevinger’s SCT.[^7]Bill Torbert's 1972 course, "Toward and Action Science," acquainted [Bill Joiner](https://changewise.biz/?page_id=249&..) with the field, leading to a research paper, training in scoring Loevinger’s SCT, larger and longer research projects on leadership development, and eventually a book, _Leadership Agility_ (2006).[^8]
 
-[Robert Kegan](https://www.gse.harvard.edu/faculty/robert-kegan) was acquainted with Jane Loevinger as a doctoral student at Harvard, and briefly compares his own developmental theory to Loevinger's in _The Evolving Self_ (1982) and _In Over Our Heads_ (1994). [^9]  [^10]  [^11] Kegan's theory has its own profile approach that roughly approximates Loevinger's SCT: the Subject-Object Interview (SOI). [^12] Kegan applies forty years of longitudinal research into adult development to organizational development in _An Everyone Culture_ (2016). [^13]
+[Robert Kegan](https://www.gse.harvard.edu/faculty/robert-kegan) was acquainted with Jane Loevinger as a doctoral student at Harvard,[^9] and briefly compares his own developmental theory to Loevinger's in _The Evolving Self_ (1982)[^10] and _In Over Our Heads_ (1994).[^11] Kegan's theory has its own profile approach that roughly approximates Loevinger's SCT: the Subject-Object Interview (SOI).[^12] Kegan applies forty years of longitudinal research into adult development to organizational development in _An Everyone Culture_ (2016).[^13]
 
-Cook-Greuter worked with Torbert and [Elaine Herdman-Barker](https://www.gla.global/elaine-herdman-barker/) on the Leadership Development Profile (LDP), an evolution from Loevinger's SCT with greater emphasis on leadership development. [^7] In 2005, Cook-Greuter modified the profile into the Mature Adult Profile (MAP), and in 2012, Tobert modified the profile into the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/). [^14]
+Cook-Greuter worked with Torbert and [Elaine Herdman-Barker](https://www.gla.global/elaine-herdman-barker/) on the Leadership Development Profile (LDP), an evolution from Loevinger's SCT with greater emphasis on leadership development.[^7] In 2005, Cook-Greuter modified the profile into the Mature Adult Profile (MAP), and in 2012, Tobert modified the profile into the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/).[^14]
 
 ## Master Trait
 
-These decades of application and research have shown developmental stage to be a "master trait" second only to intelligence in determining measurable psychological differences. [^5] And while it is related to intelligence--with a moderate positive correlation of .13 to .46 in 10 out of 15 studies--it is, however, different. Development stage affects four domains: [^15]
+These decades of application and research have shown developmental stage to be a "master trait" second only to intelligence in determining measurable psychological differences.[^5] And while it is related to intelligence--with a moderate positive correlation of .13 to .46 in 10 out of 15 studies--it is, however, different. Development stage affects four domains:[^15]
 
 * character development (impulse control and moral development),
 * cognitive style,
 * conscious preoccupations, and
 * interpersonal style.
 
-Favorable personality characteristics associated with developmental stage include nurturance, conscientiousness, trust, tolerance, interpersonal sensitivity, psychological mindedness, creativity, moral development, and a variety of measures related to mental health. [^16]
+Favorable personality characteristics associated with developmental stage include nurturance, conscientiousness, trust, tolerance, interpersonal sensitivity, psychological mindedness, creativity, moral development, and a variety of measures related to mental health.[^16]
 
 ## Horizontal and Vertical Goals
 
