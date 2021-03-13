@@ -1,4 +1,5 @@
 ---
+discussion_id: What-Is-Growing-Up
 excerpt: What is it I wonder about "growing up"? (Read in 5 minutes.)
 layout: post
 mermaid: true
