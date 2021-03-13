@@ -32,7 +32,8 @@ footer-links:
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
-talkyard_server_url: https://comments-for-rowdenw-github-io.talkyard.net/
+talkyard_server_url: https://comments-for-rowdenw-github-io.talkyard.net
+talkyard_script_url: https://c1.ty-cdn.net/-/talkyard-comments.min.js
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: G-JT0N5C842D
