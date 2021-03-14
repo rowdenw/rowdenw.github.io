@@ -11,8 +11,6 @@ title: Grown-Up Thinking
 
 ~ Gregory Bateson[^1]
 
-* [ ] Change Mermaid blocks to div class="mermaid"
-
 Major problems in the world--[nuclear war](https://80000hours.org/problem-profiles/nuclear-security/), [climate change](https://80000hours.org/problem-profiles/climate-change/), [pandemics](https://80000hours.org/problem-profiles/global-catastrophic-biological-risks/), [artificial intelligence](https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/), biotechnology, etc.--means that we have a nonzero [probability of self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). How can we learn to think in ways that better understand foreign relations between nuclear powers, climatic systems, ecosystems, intelligent decision-making systems, etc.? Herb Koplowitz notes:
 
 > Barry Commoner (quoted in M. Bateson, 1972) and G. Bateson (1972) refer to the inability of adults, scientists, and laymen alike to understand cyclical, patterned phenomena such as interpersonal relationships and a variety of biological processes because they attempt to understand cause-and-effect patterns as linear.[^2]
@@ -29,18 +27,18 @@ Into these groups I'll place stages of [vertical development]({% post_url 2021-0
 
 Pre-logical and pre-conventional thinking is from birth to preteen: Explorer, Enthusiast, and Operator. During the Explorer stage a child develops "object permanence" in what Piaget called the sensorimotor stage, which you can see in a [video on Piaget's Stages of Development](https://www.youtube.com/watch?v=TRF27F2bn-A). During the Ethusiast stage learn identity ("I," "me," "mine") and representational thinking (language).[^5]
 
-The Operator stage, or (United States) grade school years, is the earliest developmental stage that persists into adulthood in noticeable numbers: Susanne R. Cook-Greuter's 1999 study of 4510 United States adults scored 4.3% at either the Ethusiast or Operator stage.[^6] You can see the [inability to see another person's (physical) point of view](https://youtu.be/TRF27F2bn-A?t=190). This is [Piaget's "concrete operational stage](https://youtu.be/TRF27F2bn-A?t=254)". The Operator externalizes blame,[^7] and when there are signs of trouble they find the cause in someone or something else. Others are to blame, "not me."
+The Operator stage, or (United States) grade school years, is the earliest developmental stage that persists into adulthood in noticeable numbers: Susanne R. Cook-Greuter's 1999 study of 4510 United States adults scored 4.3% at either the Ethusiast or Operator stage.[^6] You can see the [inability to see another person's (physical) point of view](https://youtu.be/TRF27F2bn-A?t=190). This is [Piaget's "concrete operational stage](https://youtu.be/TRF27F2bn-A?t=254)." The Operator externalizes blame,[^7] and when there are signs of trouble they find the cause in someone or something else. Others are to blame, "not me."
 
 ![Family Circus Not Me PB (1980 Fawcett)](https://d1466nnw0ex81e.cloudfront.net/n_iv/600/2111858.jpg)
 
 Pre-logical thinkers also think of events as a consequence of the events that immediately precede them,[^3] the *post hoc ergo propter hoc* fallacy.
 
-```mermaid
+<div class="mermaid">
 graph LR
 	B ==> A
-	
+
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
-```
+</div>
 
 ## Logical Thinking
 
@@ -54,30 +52,30 @@ The Conformer stage responds to signs of trouble by identifying conflict, negati
 
 Another approach to support more mature thinking is [working backwards](https://www.allthingsdistributed.com/2006/11/working_backwards.html), for example an [innovation game plan](https://youtu.be/aRff0Fe-3Tk). This can expand thinking beyond a single step to a chain of cause and effect.
 
-```mermaid
+<div class="mermaid">
 graph LR
 	S[ ] -.-> D ==> C ==> B ==> A
-	
+
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
-```
+</div>
 
 ### Expert
 
 The Expert stage begins in late adolescence for people who go on to become managers, further developing abstract operations. While perhaps 10% of managers remain in a pre-Expert stage, approximately 45% profile at Expert.[^5] Tools to support decision-making at this stage include [current reality tree](https://www.optimalservicemanagement.com/blog/theory-of-constraints-using-a-current-reality-tree/), [decision journals](https://barryoreilly.com/explore/blog/good-to-great-decisions/), and [futures wheel](https://en.wikipedia.org/wiki/Futures_wheel). While these continue to use linear chains of cause and effect, they broaden thinking to consider multiple causes and multiple effects.
 
-```mermaid
+<div class="mermaid">
 graph LR
 	C((C)) ==> A((A))
 	C ==> B((B)) ==> A
-	
+
 	classDef default fill:#FFFFFF
-```
+</div>
 
 ### Achiever
 
 Around 35% of managers profile at Achiever, using full formal operational thinking.[^5] The challenge with linear thinking is identifying the origin of a cause-and-effect chain: "Who started it?" The "[micromanagement trap](https://www.informit.com/articles/article.aspx?p=1675546&seqNum=6)" illustrates the difference of perspective that can occur: Managers see their lack of delegation as due to the problems caused by their employees' lack of competence, while employees see their lack of competence as a result of lack of experience with real problems.
 
-```mermaid
+<div class="mermaid">
 graph TD
 	subgraph b[Employee's View]
 		bM[Manager doesn't delegate] ==>
@@ -93,11 +91,11 @@ graph TD
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	style a fill:#FFFFFF
   style b fill:#FFFFFF
-```
+</div>
 
 A coach might observe that both views can be true in a loop rather than a chain of cause-and-effect.
 
-```mermaid
+<div class="mermaid">
 graph TD
 	subgraph c[Coach's View]
   	cE[Employee lacks experience] ==>
@@ -107,11 +105,11 @@ graph TD
 
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	style c fill:#FFFFFF
-```
+</div>
 
 In this example you can see that the employee's and manager's views are subsets of the coach's view. Seeing both the employee's and manager's point of view as subsets makes the coach's view more complex than the view of the employee or manager.
 
-```mermaid
+<div class="mermaid">
 graph LR
 	vE[Employee's view]		-.->S1[ ]
 	vM[Manager's view]		--> S2[ ]
@@ -122,14 +120,14 @@ graph LR
 	M[Manager doesn't delegate] ==> E
 	M -.-> E -.-> P
 	E --> P --> M
-
+	
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	linkStyle default interpolate basis
-```
+</div>
 
 A tool to support thinking at this stage is a [causal loop diagram](https://en.wikipedia.org/wiki/Causal_loop_diagram). These diagrams can show the positive or negative influence of each factor: delegation increases competence, which reduces problems. The fewer problems occur, the more comfortable delegation is, and conversely the more problems occur, the more uncomfortable delegation is. These three variables--delegation, competence, and problems--are interdependent.
 
-```mermaid
+<div class="mermaid">
 graph TD
 	D[Delegation] =="+"==>
 	C[Competence] =="-"==>
@@ -137,7 +135,7 @@ graph TD
 
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	linkStyle default interpolate basis
-```
+</div>
 
 This cause-effect cycle illustrates the consequences of a reinforcing feedback loop:
 
@@ -146,20 +144,20 @@ This cause-effect cycle illustrates the consequences of a reinforcing feedback l
 
 Another example of a vicious circle is a stampede.
 
-```mermaid
+<div class="mermaid">
 graph LR
 	S[Number of<br>Sheep Running] =="+"==>
 	P[Overall Level<br>of Panice] =="+"==>  S
 
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	linkStyle default interpolate basis
-```
+</div>
 
 ![Calvin and Hobbes by Bill Watterson for August 29, 1988](https://assets.amuniversal.com/c3548f40dec20131719a005056a9545d)
 
 In an organization that exerts command and control, between people in unequal categories reinforcing feedback loops can exist in dominance and submission, where dominant behavior encourages submissive behavior which in turn encourages more dominant behavior. This can also occur in competitive relationships between rivals in equal categories, for example the vicious circle of the Cold War arms race, when increasing the US arsenal justified increasing the arsenal of the USSR, which in turn justified increasing the US arsenal even more.[^12]
 
-```mermaid
+<div class="mermaid">
 graph LR
 	D[Dominant<br>Behavior] =="+"==>
 	S[Submissive<br>Behavior] =="+"==>  D
@@ -169,7 +167,7 @@ graph LR
 	
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	linkStyle default interpolate basis
-```
+</div>
 
 Various colloquial sayings illustrate the experience of reinforcing feedback loops, whether it is a vicious circle or a virtuous circle.
 
@@ -181,7 +179,7 @@ Once you see cause and effect as cyclical, you can shift away from solutions tha
 
 ## Post-Logical Thinking
 
-The view of the coach on the micromanagement trap between manager and employee can illustrate the Catalyst stage, in which one is aware of context, of owning a perspective, and of patterns of behavior--and tolerant of difference.[^14] This is the first stage in a shift to a complex view of cyclical causes among interdependent variables in a system--a shift to post-logical thinking. Events and even logical arguments can be viewed in context, leading to more abstract discussions of "systems dynamics" and defining the boundaries of the system itself.[^3] Systems consciousness increases at the next stage, Co-Creator, in which one is engaged in the complex interweave of relationships,[^15] participating with a perspective on system evolution, rather than solving or intervening. 
+The view of the coach on the micromanagement trap between manager and employee illustrates the Catalyst stage, in which one is aware of context, of owning a perspective, and of patterns of behavior--and is tolerant of difference.[^14] This is the first stage in a shift to a complex view of cyclical causes among interdependent variables in a system--a shift to post-logical thinking. Events and even logical arguments can be viewed in context, leading to more abstract discussions of "systems dynamics" and defining the boundaries of the system itself.[^3] Systems consciousness increases at the next stage, Co-Creator, in which one is engaged in the complex interweave of relationships,[^15] participating with a perspective on system evolution, rather than solving or intervening. 
 
 Thus the development of post-logical thinking (perhaps using some of these tools) offers hope for evolving our approach to foreign relations between nuclear powers, climatic systems, ecosystems, intelligent decision-making systems, etc.--and increasing humanity's probability of survival.
 
