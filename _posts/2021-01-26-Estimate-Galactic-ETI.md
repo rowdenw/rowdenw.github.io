@@ -36,7 +36,7 @@ But I'm a fan of "land-based life" on this particular "Earth-like planet." And I
 
 > Act so that the effects of your action are compatible with the permanence of genuine human life
 
-I am reminded of the the [Doomsday Clock](https://www.wired.co.uk/article/what-is-the-doomsday-clock), and the threats to long-term genuine human life:
+I am reminded of the [Doomsday Clock](https://www.wired.co.uk/article/what-is-the-doomsday-clock), and the threats to long-term genuine human life:
 
 * [nuclear war](https://80000hours.org/problem-profiles/nuclear-security/),
 * [climate change](https://80000hours.org/problem-profiles/climate-change/),

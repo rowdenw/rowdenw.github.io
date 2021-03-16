@@ -45,7 +45,7 @@ Loevinger's research influenced several subsequent developmentalists. [Bill Torb
 
 [Robert Kegan](https://www.gse.harvard.edu/faculty/robert-kegan) was acquainted with Jane Loevinger as a doctoral student at Harvard,[^9] and briefly compares his own developmental theory to Loevinger's in _The Evolving Self_ (1982)[^10] and _In Over Our Heads_ (1994).[^11] Kegan's theory has its own profile approach that roughly approximates Loevinger's SCT: the Subject-Object Interview (SOI).[^12] Kegan applies forty years of longitudinal research into adult development to organizational development in _An Everyone Culture_ (2016).[^13]
 
-Cook-Greuter worked with Torbert and [Elaine Herdman-Barker](https://www.gla.global/elaine-herdman-barker/) on the Leadership Development Profile (LDP), an evolution from Loevinger's SCT with greater emphasis on leadership development.[^7] In 2005, Cook-Greuter modified the profile into the Mature Adult Profile (MAP), and in 2012, Tobert modified the profile into the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/).[^14]
+Cook-Greuter worked with Torbert and [Elaine Herdman-Barker](https://www.gla.global/elaine-herdman-barker/) on the Leadership Development Profile (LDP), an evolution from Loevinger's SCT with greater emphasis on leadership development.[^7] In 2005, Cook-Greuter modified the profile into the Mature Adult Profile (MAP), and in 2012, Torbert modified the profile into the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/).[^14]
 
 ## Master Trait
 

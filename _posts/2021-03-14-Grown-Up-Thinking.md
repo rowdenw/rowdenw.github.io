@@ -25,9 +25,9 @@ Into these groups I'll place stages of [vertical development]({% post_url 2021-0
 
 ## Pre-Logical Thinking
 
-Pre-logical and pre-conventional thinking is from birth to preteen: Explorer, Enthusiast, and Operator. During the Explorer stage a child develops "object permanence" in what Piaget called the sensorimotor stage, which you can see in a [video on Piaget's Stages of Development](https://www.youtube.com/watch?v=TRF27F2bn-A). During the Ethusiast stage learn identity ("I," "me," "mine") and representational thinking (language).[^5]
+Pre-logical and pre-conventional thinking is from birth to preteen: Explorer, Enthusiast, and Operator. During the Explorer stage a child develops "object permanence" in what Piaget called the sensorimotor stage, which you can see in a [video on Piaget's Stages of Development](https://www.youtube.com/watch?v=TRF27F2bn-A). During the Enthusiast stage a child learns identity ("I," "me," "mine") and representational thinking (language).[^5]
 
-The Operator stage, or (United States) grade school years, is the earliest developmental stage that persists into adulthood in noticeable numbers: Susanne R. Cook-Greuter's 1999 study of 4510 United States adults scored 4.3% at either the Ethusiast or Operator stage.[^6] You can see the [inability to see another person's (physical) point of view](https://youtu.be/TRF27F2bn-A?t=190). This is [Piaget's "concrete operational stage](https://youtu.be/TRF27F2bn-A?t=254)." The Operator externalizes blame,[^7] and when there are signs of trouble they find the cause in someone or something else. Others are to blame, "not me."
+The Operator stage, or (United States) grade school years, is the earliest developmental stage that persists into adulthood in noticeable numbers: Susanne R. Cook-Greuter's 1999 study of 4510 United States adults scored 4.3% at either the Enthusiast or Operator stage.[^6] You can see the [inability to see another person's (physical) point of view](https://youtu.be/TRF27F2bn-A?t=190). This is [Piaget's "concrete operational stage](https://youtu.be/TRF27F2bn-A?t=254)." The Operator externalizes blame,[^7] and when there are signs of trouble they find the cause in someone or something else. Others are to blame, "not me."
 
 ![Family Circus Not Me PB (1980 Fawcett)](https://d1466nnw0ex81e.cloudfront.net/n_iv/600/2111858.jpg)
 
