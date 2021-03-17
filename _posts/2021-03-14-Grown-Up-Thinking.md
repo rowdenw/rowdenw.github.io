@@ -11,7 +11,15 @@ title: Grown-Up Thinking
 
 ~ Gregory Bateson[^1]
 
-Major problems in the world--[nuclear war](https://80000hours.org/problem-profiles/nuclear-security/), [climate change](https://80000hours.org/problem-profiles/climate-change/), [pandemics](https://80000hours.org/problem-profiles/global-catastrophic-biological-risks/), [artificial intelligence](https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/), biotechnology, etc.--means that we have a nonzero [probability of self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). How can we learn to think in ways that better understand foreign relations between nuclear powers, climatic systems, ecosystems, intelligent decision-making systems, etc.? Herb Koplowitz notes:
+Major problems in the world--[nuclear war](https://80000hours.org/problem-profiles/nuclear-security/), [climate change](https://80000hours.org/problem-profiles/climate-change/), [pandemics](https://80000hours.org/problem-profiles/global-catastrophic-biological-risks/), [artificial intelligence](https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/), biotechnology, etc.--means that we have a nonzero [probability of self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). How can we learn to think in ways that better understand?:
+
+* foreign relations between nuclear powers,
+* climatic systems,
+* ecosystems,
+* intelligent decision-making systems,
+* etc.
+
+Herb Koplowitz notes:
 
 > Barry Commoner (quoted in M. Bateson, 1972) and G. Bateson (1972) refer to the inability of adults, scientists, and laymen alike to understand cyclical, patterned phenomena such as interpersonal relationships and a variety of biological processes because they attempt to understand cause-and-effect patterns as linear.[^2]
 
@@ -25,9 +33,9 @@ Into these groups I'll place stages of [vertical development]({% post_url 2021-0
 
 ## Pre-Logical Thinking
 
-Pre-logical and pre-conventional thinking is from birth to preteen: Explorer, Enthusiast, and Operator. During the Explorer stage a child develops "object permanence" in what Piaget called the sensorimotor stage, which you can see in a [video on Piaget's Stages of Development](https://www.youtube.com/watch?v=TRF27F2bn-A). During the Enthusiast stage a child learns identity ("I," "me," "mine") and representational thinking (language).[^5]
+Pre-logical thinking is from birth to preteen: Explorer, Enthusiast, and Operator. During the Explorer stage a child develops "object permanence" in what Piaget called the sensorimotor stage, which you can see in a [video on Piaget's Stages of Development](https://www.youtube.com/watch?v=TRF27F2bn-A). During the Enthusiast stage a child learns identity ("I," "me," "mine") and representational thinking (language).[^5]
 
-The Operator stage, or (United States) grade school years, is the earliest developmental stage that persists into adulthood in noticeable numbers: Susanne R. Cook-Greuter's 1999 study of 4510 United States adults scored 4.3% at either the Enthusiast or Operator stage.[^6] You can see the [inability to see another person's (physical) point of view](https://youtu.be/TRF27F2bn-A?t=190). This is [Piaget's "concrete operational stage](https://youtu.be/TRF27F2bn-A?t=254)." The Operator externalizes blame,[^7] and when there are signs of trouble they find the cause in someone or something else. Others are to blame, "not me."
+The Operator stage, or (United States) grade school years, is the earliest developmental stage that persists into adulthood in noticeable numbers: Susanne R. Cook-Greuter's 1999 study of 4510 United States adults scored 4.3% at either the Enthusiast or Operator stage.[^6] You can see the [inability to see another person's point of view](https://youtu.be/TRF27F2bn-A?t=190). This is [Piaget's "concrete operational stage](https://youtu.be/TRF27F2bn-A?t=254)." The Operator externalizes blame,[^7] and when there are signs of trouble they find the cause in someone or something else. Others are to blame, "not me."
 
 ![Family Circus Not Me PB (1980 Fawcett)](https://d1466nnw0ex81e.cloudfront.net/n_iv/600/2111858.jpg)
 
@@ -73,7 +81,7 @@ graph LR
 
 ### Achiever
 
-Around 35% of managers profile at Achiever, using full formal operational thinking.[^5] The challenge with linear thinking is identifying the origin of a cause-and-effect chain: "Who started it?" The "[micromanagement trap](https://www.informit.com/articles/article.aspx?p=1675546&seqNum=6)" illustrates the difference of perspective that can occur: Managers see their lack of delegation as due to the problems caused by their employees' lack of competence, while employees see their lack of competence as a result of lack of experience with real problems.
+Around 35% of managers profile at Achiever, using full formal operational thinking.[^5] The challenge with linear thinking is identifying the origin of a cause-and-effect chain. The [micromanagement trap](https://www.informit.com/articles/article.aspx?p=1675546&seqNum=6) illustrates the differences of perspective that can occur about "Who started it?" A manager can see their lack of delegation as due to the problems caused by an employees' lack of competence, while an employee can see their lack of competence as a result of lack of experience with real problems.
 
 <div class="mermaid">
 graph TD
@@ -107,7 +115,7 @@ graph TD
 	style c fill:#FFFFFF
 </div>
 
-In this example you can see that the employee's and manager's views are subsets of the coach's view. Seeing both the employee's and manager's point of view as subsets makes the coach's view more complex than the view of the employee or manager.
+In this example you can see that the employee's and manager's views are subsets of the coach's view. Seeing both the employee's and manager's point of view as subsets makes the coach's view more complex than the view of either the employee or the manager.
 
 <div class="mermaid">
 graph LR
@@ -142,31 +150,36 @@ This cause-effect cycle illustrates the consequences of a reinforcing feedback l
 * Decreasing delegation reduces competence which increases problems which in turn reduces delegation--a *vicious circle*.
 * Conversely, increasing delegation increases competence which decreases problems which in turn increases delegation--a *virtuous circle*.
 
-Another example of a vicious circle is a stampede.
-
-<div class="mermaid">
-graph LR
-	S[Number of<br>Sheep Running] =="+"==>
-	P[Overall Level<br>of Panice] =="+"==>  S
-
-	classDef default fill:#FFFFFF, stroke:#FFFFFF
-	linkStyle default interpolate basis
-</div>
-
 ![Calvin and Hobbes by Bill Watterson for August 29, 1988](https://assets.amuniversal.com/c3548f40dec20131719a005056a9545d)
 
-In an organization that exerts command and control, between people in unequal categories reinforcing feedback loops can exist in dominance and submission, where dominant behavior encourages submissive behavior which in turn encourages more dominant behavior. This can also occur in competitive relationships between rivals in equal categories, for example the vicious circle of the Cold War arms race, when increasing the US arsenal justified increasing the arsenal of the USSR, which in turn justified increasing the US arsenal even more.[^12]
+You can see examples of reinforcing feedback loops causing vicious circles in animal behavior, organizational behevior, and international relationships:
+
+* A stampede is an example of a vicious circle.
+* In an organization that exerts command and control, reinforcing feedback loops can exist in dominance and submission between people in unequal categories. Dominant behavior encourages submissive behavior which in turn encourages more dominant behavior. 
+* This can also occur in competitive relationships between rivals in equal categories, for example the vicious circle of the Cold War arms race, when increasing the US arsenal justified increasing the arsenal of the USSR, which in turn justified increasing the US arsenal even more.[^12]
 
 <div class="mermaid">
-graph LR
-	D[Dominant<br>Behavior] =="+"==>
-	S[Submissive<br>Behavior] =="+"==>  D
+graph TD
+	subgraph c[ ]
+		A[US amasses<br>nuclear<br>weapons] =="+"==>
+		R[USSR<br>amasses<br>nuclear<br>weapons] =="+"==> A
+	end
 
-	A[US amasses<br>nuclear<br>weapons] =="+"==>
-	R[USSR<br>amasses<br>nuclear<br>weapons] =="+"==> A
+	subgraph b[ ]
+		D[Dominant<br>Behavior] =="+"==>
+		S[Submissive<br>Behavior] =="+"==>  D
+	end
+	
+	subgraph a[ ]
+		N[Number of<br>Sheep Running] =="+"==>
+		P[Overall Level<br>of Panic] =="+"==>  N
+	end
 	
 	classDef default fill:#FFFFFF, stroke:#FFFFFF
 	linkStyle default interpolate basis
+	style a fill:#FFFFFF, stroke:#FFFFFF
+	style b fill:#FFFFFF, stroke:#FFFFFF
+	style c fill:#FFFFFF, stroke:#FFFFFF
 </div>
 
 Various colloquial sayings illustrate the experience of reinforcing feedback loops, whether it is a vicious circle or a virtuous circle.
@@ -179,7 +192,9 @@ Once you see cause and effect as cyclical, you can shift away from solutions tha
 
 ## Post-Logical Thinking
 
-The view of the coach on the micromanagement trap between manager and employee illustrates the Catalyst stage, in which one is aware of context, of owning a perspective, and of patterns of behavior--and is tolerant of difference.[^14] This is the first stage in a shift to a complex view of cyclical causes among interdependent variables in a system--a shift to post-logical thinking. Events and even logical arguments can be viewed in context, leading to more abstract discussions of "systems dynamics" and defining the boundaries of the system itself.[^3] Systems consciousness increases at the next stage, Co-Creator, in which one is engaged in the complex interweave of relationships,[^15] participating with a perspective on system evolution, rather than solving or intervening. 
+The view of the coach on the micromanagement trap between manager and employee illustrates the Catalyst stage, in which one is aware of context, of owning a perspective, and of patterns of behavior--and is tolerant of difference.[^14] This is the first stage in a shift to a complex view of cyclical causes among interdependent variables in a system--a shift to post-logical thinking. Events and even logical arguments can be viewed in context, leading to more abstract discussions of "systems dynamics" and defining the boundaries of the system itself.[^3]
+
+Systems consciousness increases at the next stage, Co-Creator, in which one is engaged in the complex interweave of relationships,[^15] participating with a perspective on system evolution, rather than solving or intervening. 
 
 Thus the development of post-logical thinking (perhaps using some of these tools) offers hope for evolving our approach to foreign relations between nuclear powers, climatic systems, ecosystems, intelligent decision-making systems, etc.--and increasing humanity's probability of survival.
 
@@ -196,7 +211,7 @@ Thus the development of post-logical thinking (perhaps using some of these tools
 [^9]: See "Diplomat" description in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
 [^10]: William R. Torbert and Elaine Herdman Barker (n.d.). The Global Leadership Profile: Action-Logic Descriptions for Coaches.
 [^11]: Kerth, N.L. (2001) _Project Retrospectives: A Handbook for Team Reviews_; Dorset House: New York; [ISBN 978-0-932633-44-6](https://isbn.nu/9780932633446).
-[^12]: Gregory Bateson called these "complementary schismogenesis" and "symmetrical schismogenesis," respectively, in Bateson, G. (1972) _Steps to an Ecology of Mind: Collected Essays in Anthropology, Psychiatry, Evolution, and Epistemology_; 1 edition.; University of Chicago Press: Chicago; [ISBN 978-0-226-03905-3](https://isbn.nu/9780226039053).
+[^12]: Gregory Bateson called the second two examples "complementary schismogenesis" and "symmetrical schismogenesis," respectively, in Bateson, G. (1972) _Steps to an Ecology of Mind: Collected Essays in Anthropology, Psychiatry, Evolution, and Epistemology_; 1 edition.; University of Chicago Press: Chicago; [ISBN 978-0-226-03905-3](https://isbn.nu/9780226039053).
 [^13]: See Meadows, D. (1999) [Leverage Points: Places to Intervene in a System](http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/). *The Academy for Systems Change*.
 [^14]: See "Redefining" description in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
 [^15]: See "Transforming" description in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
