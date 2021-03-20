@@ -2,7 +2,9 @@
 discussion_id: Estimate-Galactic-ETI
 excerpt: This weekend at the request of an American science fiction author I read a 2020 scientific paper on the search for extraterrestrial intelligence. This 8-minute read is my response.
 layout: post
-tag: growing up
+tags:
+  - existential risk
+  - growing up
 title: Estimate Milky Way Extraterrestrial Intelligence
 ---
 

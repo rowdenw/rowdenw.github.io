@@ -3,7 +3,9 @@ discussion_id: Grown-Up-Thinking
 excerpt: 
 layout: post
 mermaid: true
-tag: growing up
+tags:
+  - existential risk
+  - growing up
 title: Grown-Up Thinking
 ---
 
