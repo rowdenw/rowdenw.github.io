@@ -1,6 +1,6 @@
 ---
 discussion_id: Grown-Up-Thinking
-excerpt: 
+excerpt: According to Gregory Bateson, the major problems in the world are the result of the difference between how nature works and the way people think. How can we learn to think in better ways?
 layout: post
 mermaid: true
 tags:
@@ -194,9 +194,9 @@ Once you see cause and effect as cyclical, you can shift away from solutions tha
 
 ## Post-Logical Thinking
 
-The view of the coach on the micromanagement trap between manager and employee illustrates the Catalyst stage, in which one is aware of context, of owning a perspective, and of patterns of behavior--and is tolerant of difference.[^14] This is the first stage in a shift to a complex view of cyclical causes among interdependent variables in a system--a shift to post-logical thinking. Events and even logical arguments can be viewed in context, leading to more abstract discussions of "systems dynamics" and defining the boundaries of the system itself.[^3]
+The view of the coach on the micromanagement trap between manager and employee illustrates the Catalyst stage, in which one is aware of context, of owning a perspective, and of patterns of behavior--and is tolerant of difference.[^14] An estimated 5% of managers profile at Catalyst.[^5] This is the first stage in a shift to a complex view of cyclical causes among interdependent variables in a system--a shift to post-logical thinking. Events and even logical arguments can be viewed in context, leading to more abstract discussions of "systems dynamics" and defining the boundaries of the system itself.[^3]
 
-Systems consciousness increases at the next stage, Co-Creator, in which one is engaged in the complex interweave of relationships,[^15] participating with a perspective on system evolution, rather than solving or intervening. 
+Systems consciousness increases at the next stage, Co-Creator, in which one is engaged in the complex interweave of relationships,[^15] participating with a perspective on system evolution, rather than solving or intervening.  An estimated 4% of managers profile at Co-Creator.[^5]
 
 Thus the development of post-logical thinking (perhaps using some of these tools) offers hope for evolving our approach to foreign relations between nuclear powers, climatic systems, ecosystems, intelligent decision-making systems, etc.--and increasing humanity's probability of survival.
 
