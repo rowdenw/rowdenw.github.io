@@ -1,0 +1,162 @@
+---
+title: "William Rowden's CV"
+author: William Rowden
+date: "`r Sys.Date()`"
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile,
+                    encoding = encoding,
+                    params = list(pdf_mode = FALSE),
+                    output_file = "../cv.html") })
+params:
+  pdf_mode:
+    value: false
+output:
+  pagedown::html_resume:
+    css: ['dd_cv.css', 'resume']
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(magrittr) # For the pipe
+source("cv_printing_functions.r")
+
+# Read in all data and initialize a CV printer object
+CV <- create_CV_object(
+  data_location = "/Users/williamrowden/Documents/GitHub/rowdenw.github.io/_data/",  
+  pdf_mode = params$pdf_mode
+)
+
+```
+
+
+```{r}
+# When in pdf export mode the little dots are unaligned, so fix that with some conditional CSS.
+if(params$pdf_mode) {
+    cat("
+<style>
+:root{
+  --decorator-outer-offset-left: -6.5px;
+}
+</style>")
+}
+```
+
+
+Aside
+================================================================================
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %>% print_contact_info()
+```
+
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+
+Last updated on `r Sys.Date()`.
+
+
+
+Main
+================================================================================
+
+William Rowden {#title}
+--------------------------------------------------------------------------------
+
+```{r}
+# Note the special double pipe so we modify the CV object in place
+CV %<>% print_text_block("intro") 
+```
+
+
+
+Industry Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('industy_experience_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('industry_positions')
+```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('education')
+```
+
+
+
+Webinars {data-icon=phone}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('webinars')
+```
+
+
+
+Report Contributions {data-icon=file-word}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('writings')
+```
+
+
+
+Podcasts (Guest)  {data-icon=podcast}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('podcast_guest_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('podcast_guest')
+```
+
+
+
+Podcasts (Host)  {data-icon=podcast}
+--------------------------------------------------------------------------------
+
+::: aside
+```{r}
+CV %<>% print_text_block('podcast_host_aside')
+```
+:::
+
+```{r}
+CV %<>% print_section('podcast_host')
+```
+
+
+
+```{r}
+CV %<>% print_links()
+```
+
