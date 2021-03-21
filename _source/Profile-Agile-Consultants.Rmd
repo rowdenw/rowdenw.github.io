@@ -1,0 +1,68 @@
+---
+output:
+  md_document:
+    variant: gfm
+    preserve_yaml: TRUE
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
+author: "William C. Rowden"
+date: "2021-03-21"
+discussion_id: Profile-Agile-Consultans
+excerpt: ""
+layout: post
+mermaid: false
+tags:
+  - growing up
+title: Profile Agile Consultants
+---
+
+```{r setup, include=FALSE}
+base_dir <- "~/Documents/GitHub/rowdenw.github.io" # i.e. where the jekyll blog is on the hard drive.
+base_url <- "/" # keep as is
+fig_path <- "images/" # customize to heart's content, I 'spose.
+
+knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.path = fig_path,
+                      cache.path = '../_cache/',
+                      message=FALSE, warning=FALSE,
+                      cache = TRUE)
+library(tidyverse)
+```
+
+## Agile Consultants
+
+```{r Anonymize-Results, echo=FALSE}
+path_source <- file.path(base_dir, "_data", "Source-GLP.csv")
+profile_df <- read.csv(path_source, stringsAsFactors = FALSE)
+profile_columns <- profile_df %>% select(Profile, Ogive, Modifier)
+profile_columns %>% arrange(Ogive, Modifier)
+```
+
+```{r Early, echo=FALSE}
+early_profile <- profile_df[which.min(profile_df$Ogive + profile_df$Modifier), "Profile"]
+path_stems <- file.path(base_dir, "_data", "Score-GLP.csv")
+stems_df <- read.csv(path_stems, stringsAsFactors = FALSE)
+stems_max <- stems_df[which.max(stems_df$Stems), "Stems"]
+early <- stems_df %>% filter(Profile == early_profile)
+ggplot(early, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
+  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
+```
+
+```{r Late, echo=FALSE}
+late_profile <- profile_df[which.max(profile_df$Ogive + profile_df$Modifier), "Profile"]
+late <- stems_df %>% filter(Profile == late_profile)
+ggplot(late, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
+  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
+```
+
+```{r Score-Profile, echo=FALSE}
+ggplot(profile_df, aes(x = factor(Initials), y = Ogive)) + geom_point()
+```
+
+```{r Score-Stems, echo=FALSE}
+ggplot(stems_df, aes(x = Stage, y = Stems, color = Profile)) + geom_point() + geom_smooth() +
+  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max)) +
+  theme(legend.position = "none")
+```
+
