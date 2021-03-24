@@ -200,7 +200,7 @@ Systems consciousness increases at the next stage, Co-Creator, in which one is e
 
 Thus the development of post-logical thinking (perhaps using some of these tools) offers hope for evolving our approach to foreign relations between nuclear powers, climatic systems, ecosystems, intelligent decision-making systems, etc.--and increasing humanity's probability of survival.
 
-## EndNotes
+## Notes
 
 [^1]: Bateson, N. (2011) _[An Ecology of Mind: A Daughter’s Portrait of Gregory Bateson](http://www.anecologyofmind.com/)_.
 [^2]: Koplowitz, H. (1984) A Projection Beyond Piaget’s Formal-Operations Stage: A General System Stage And A Unitary Stage. In Armon, C.; Commons, M.L.; Richards, F. _Beyond Formal Operations: Late Adolescent and Adult Cognitive Development_; Praeger: New York; [ISBN 978-0-275-91139-3](https://isbn.nu/9780275911393).

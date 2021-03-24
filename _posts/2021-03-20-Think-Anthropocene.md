@@ -86,7 +86,7 @@ Adult development research consequently has at least two implications for meetin
 
 My time seems short in comparison to the time required to sustain life and make a contribution to the well-being of my species and our planet--lasting peace, valuing of culture, and sustainable relationship to our environment. Sometimes I wish that I had been better with my time on this planet so far, and there were more time left here for me personally--but who am I, anyway?
 
-## Endnotes
+## Notes
 
 [^1]: Steiner, A. (2020) Foreward to _[The Next Frontier: Human Development and the Anthropocene](http://hdr.undp.org/sites/default/files/hdr_2020_overview_english.pdf)_; Human Development Report; United Nations Development Programme (UNDP) Human Development Report Office (HDRO).
 [^2]: _[The Next Frontier: Human Development and the Anthropocene](http://hdr.undp.org/sites/default/files/hdr_2020_overview_english.pdf)_; Human Development Report; United Nations Development Programme (UNDP) Human Development Report Office (HDRO).

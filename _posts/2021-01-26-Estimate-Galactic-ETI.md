@@ -60,7 +60,7 @@ General Systems Theory suggests that the development--whether of a star or a per
 ![The lifecycles and outcomes for stars, from birth to beyond death](https://upload.wikimedia.org/wikipedia/commons/4/47/Star_Life_Cycle_Chart.jpg)
 R.N. Bailey, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0), via Wikimedia Commons
 
-## Endnotes
+## Notes
 
 [^1]: C.G. Jung, _Memories, Dreams, Reflections_
 [^2]: See Robert R. Holt, “Loevinger’s Conception of Ego Development and General Systems Theory” in _[Personality Development: Theoretical, Empirical, and Clinical Investigations of Loevinger's Conception of Ego Development](https://smile.amazon.com/gp/product/B00CWD1IF4/)_ for the source of these examples.

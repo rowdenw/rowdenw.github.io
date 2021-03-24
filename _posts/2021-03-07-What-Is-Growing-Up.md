@@ -64,7 +64,7 @@ Favorable personality characteristics associated with developmental stage includ
 
 As a lifelong learner, I often have personal goals for horizontal development, resulting in more knowledge or skill. But adding data, information, or knowledge is not the same as changing the structure of our thinking. Adult developmental research suggests also setting a personal goal for vertical development, one that requires more complex, systemic, strategic, and interdependent thinking. Typically this would address our blind spots, ways we are invisibly undermining ourselves.
 
-## Endnotes
+## Notes
 
 [^1]: Petrie, N. (2014) _[Vertical Leadership Development–Part 1: Developing Leaders for a Complex World](https://14226776-c20f-46a2-bcd6-85cefe57153f.filesusr.com/ugd/a8b141_65db299b1e274cdc84e3de48016b9862.pdf)_; Center for Creative Leadership.
 [^2]: Susanne Cook-Greuter's early research results are in Cook-Greuter, S. (1990) Maps for Living: Ego-Development Stages from Symbiosis to Conscious Universal Embeddedness. In _Adult Development: Volume 2: Models and Methods in the Study of Adolescent and Adult Thought_; Commons, M.L., Armon, C., Kohlberg, L., Richards, F.A., Grotzer, T.A., Sinnott, J.D., Eds. Praeger: New York; [ISBN 978-0-275-92755-4](https://isbn.nu/9780275927554).
