@@ -57,6 +57,10 @@ Our relationship to time changes in other ways as well. Responses to leadership 
 | Co-Creator | 10 to 20 years     | Perspective is historical, time horizon is strategic[^8] patterns in long-term trends, requiring reflection and wisdom.[^9] |
 | Synergist  | intergenerational  | Perspective is global-historical beyond lifetime.[^9] Treats time and events as symbolic.[^7] |
 
+![yellow pink and white cake on white ceramic plate](/images/yellow_pink_and_white_cake_on_white_ceramic_plate-scopio-bdc236c5-b8a0-4d84-8e78-5a221d835755.jpeg){:class="img-responsive"}
+
+Photo by  [Benjamin Lim](https://scop.io/collections/vendors?q=Benjamin+Lim) on  [Scopio](https://scop.io/)
+
 ## Layer Cake of Society
 
 If the deeper wisdom and understanding of later levels of development could help with thinking about climate change, how many people are able to take on the challenge? Susanne R. Cook-Greuter's 1999 study of 4510 United States adults shows the thickness of the various layers in the "layer cake of society."[^10]
