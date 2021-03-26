@@ -56,6 +56,12 @@ ggplot(late, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
   coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
 ```
 
+```{r Early+Late, echo=FALSE}
+early_late <- stems_df %>% filter(Profile %in% c(early_profile, late_profile))
+ggplot(early_late, aes(x = Stage, y = Stems, color=Profile)) + geom_point() + geom_smooth() +
+  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
+```
+
 ```{r Score-Profile, echo=FALSE}
 ggplot(profile_df, aes(x = factor(Initials), y = Ogive)) + geom_point()
 ```
