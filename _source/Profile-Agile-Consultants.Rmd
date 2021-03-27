@@ -26,8 +26,9 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.path = fig_path,
                       cache.path = '../_cache/',
                       message=FALSE, warning=FALSE,
-                      cache = TRUE)
+                      cache = FALSE) # Change to TRUE for publication.
 library(tidyverse)
+library("ggthemes")
 ```
 
 ## Adults
@@ -36,8 +37,13 @@ library(tidyverse)
 path_CG_results <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
 results_df <- read.csv(path_CG_results, stringsAsFactors = FALSE)
 mixed <- results_df %>% filter(Sample == 1)
+joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
+            "Co-Creator", "Synergist")
 ggplot(mixed, aes(x = Stage, y = Percentage)) + geom_point() +
-  geom_smooth() + coord_cartesian(xlim=c(2,10), ylim=c(0,100))
+  geom_line() +
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous() +
+  theme_tufte()
 ```
 
 
@@ -45,8 +51,12 @@ ggplot(mixed, aes(x = Stage, y = Percentage)) + geom_point() +
 
 ```{r Cook-Greuter-Results, echo=FALSE}
 consultants <- results_df %>% filter(Sample < 4)
-ggplot(consultants, aes(x = Stage, y = Percentage, color=factor(Sample))) + geom_point() +
-  geom_smooth() + coord_cartesian(xlim=c(2,10), ylim=c(0,100))
+ggplot(consultants, aes(x = Stage, y = Percentage, shape=factor(Sample))) + geom_point() +
+  geom_line() +
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous() +
+  theme_tufte() +
+  labs(shape = "Sample")
 ```
 
 ## Agile Consultants
@@ -60,7 +70,11 @@ profile_columns %>% arrange(Ogive, Modifier)
 
 ```{r Distribute-Profiles, echo=FALSE}
 consultant_team <- profile_df %>% filter(ACN == TRUE, Client == TRUE)
-ggplot(consultant_team, aes(x = Ogive)) + geom_bar()
+ggplot(consultant_team, aes(x = Ogive)) + geom_bar() +
+  theme_tufte() +
+  labs(x = "Stage")
+# Bar charts can't have orange, green, and teal?
+# + scale_color_manual(values = c("#FF8000", "#00FF00", "#008080"))
 ```
 
 ```{r Early, echo=FALSE}
@@ -70,29 +84,37 @@ stems_df <- read.csv(path_stems, stringsAsFactors = FALSE)
 stems_max <- stems_df[which.max(stems_df$Stems), "Stems"]
 early <- stems_df %>% filter(Profile == early_profile)
 ggplot(early, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
-  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous(limits = c(0,stems_max)) +
+  theme_tufte()
 ```
 
 ```{r Late, echo=FALSE}
 late_profile <- profile_df[which.max(profile_df$Ogive + profile_df$Modifier), "Profile"]
 late <- stems_df %>% filter(Profile == late_profile)
 ggplot(late, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
-  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous(limits = c(0,stems_max)) +
+  theme_tufte()
 ```
 
 ```{r Early+Late, echo=FALSE}
 early_late <- stems_df %>% filter(Profile %in% c(early_profile, late_profile))
 ggplot(early_late, aes(x = Stage, y = Stems, color=Profile)) + geom_point() + geom_smooth() +
-  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max))
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous(limits = c(0,stems_max)) +
+  theme_tufte()
 ```
 
 ```{r Score-Profile, echo=FALSE}
-ggplot(profile_df, aes(x = factor(Initials), y = Ogive)) + geom_point()
+ggplot(profile_df, aes(x = factor(Initials), y = Ogive + Modifier)) + geom_point() +
+  theme_tufte()
 ```
 
 ```{r Score-Stems, echo=FALSE}
-ggplot(stems_df, aes(x = Stage, y = Stems, color = Profile)) + geom_point() + geom_smooth() +
-  coord_cartesian(xlim=c(2,10), ylim=c(0,stems_max)) +
-  theme(legend.position = "none")
+ggplot(stems_df, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
+  coord_cartesian(xlim=c(2,9), ylim=c(0,stems_max)) +
+  facet_wrap( ~ Profile) +
+  theme_tufte()
 ```
 
