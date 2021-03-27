@@ -30,6 +30,25 @@ knitr::opts_chunk$set(fig.path = fig_path,
 library(tidyverse)
 ```
 
+## Adults
+
+```{r Cook-Greuter-Mixed-Adults, echo=FALSE}
+path_CG_results <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
+results_df <- read.csv(path_CG_results, stringsAsFactors = FALSE)
+mixed <- results_df %>% filter(Sample == 1)
+ggplot(mixed, aes(x = Stage, y = Percentage)) + geom_point() +
+  geom_smooth() + coord_cartesian(xlim=c(2,10), ylim=c(0,100))
+```
+
+
+## Consultants
+
+```{r Cook-Greuter-Results, echo=FALSE}
+consultants <- results_df %>% filter(Sample < 4)
+ggplot(consultants, aes(x = Stage, y = Percentage, color=factor(Sample))) + geom_point() +
+  geom_smooth() + coord_cartesian(xlim=c(2,10), ylim=c(0,100))
+```
+
 ## Agile Consultants
 
 ```{r Anonymize-Results, echo=FALSE}
@@ -37,6 +56,11 @@ path_source <- file.path(base_dir, "_data", "Source-GLP.csv")
 profile_df <- read.csv(path_source, stringsAsFactors = FALSE)
 profile_columns <- profile_df %>% select(Profile, Ogive, Modifier)
 profile_columns %>% arrange(Ogive, Modifier)
+```
+
+```{r Distribute-Profiles, echo=FALSE}
+consultant_team <- profile_df %>% filter(ACN == TRUE, Client == TRUE)
+ggplot(consultant_team, aes(x = Ogive)) + geom_bar()
 ```
 
 ```{r Early, echo=FALSE}
