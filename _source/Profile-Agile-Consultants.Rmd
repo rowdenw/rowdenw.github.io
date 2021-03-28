@@ -17,9 +17,9 @@ title: Profile Agile Consultants
 ---
 
 ```{r setup, include=FALSE}
-base_dir <- "~/Documents/GitHub/rowdenw.github.io" # i.e. where the jekyll blog is on the hard drive.
-base_url <- "/" # keep as is
-fig_path <- "images/" # customize to heart's content, I 'spose.
+base_dir <- "~/Documents/GitHub/rowdenw.github.io"
+base_url <- "/"
+fig_path <- "images/"
 
 knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
 knitr::opts_chunk$set(echo = TRUE)
@@ -33,44 +33,55 @@ library("ggthemes")
 
 ## Adults
 
-```{r Cook-Greuter-Mixed-Adults, echo=FALSE}
-path_CG_results <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
-results_df <- read.csv(path_CG_results, stringsAsFactors = FALSE)
-mixed <- results_df %>% filter(Sample == 1)
-joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
-            "Co-Creator", "Synergist")
-ggplot(mixed, aes(x = Stage, y = Percentage)) + geom_point() +
-  geom_line() +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous() +
-  theme_tufte()
+```{r Cook-Greuter-Samples, echo=FALSE}
+results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
+samples_path <- file.path(base_dir, "_data", "Cook-Greuter-Samples.csv")
+
+results_df <- read.csv(results_path, stringsAsFactors = FALSE)
+samples_df <- read.csv(samples_path, stringsAsFactors = FALSE) %>%
+  mutate(Description = paste("N=", .$Count, " ", .$Country, " ", .$Population, sep=""))
 ```
 
+```{r Cook-Greuter-Mixed-Adults, echo=FALSE}
+results_mixed <- results_df %>% filter(Sample == 1)
+samples_mixed <- samples_df %>% filter(Sample == 1)
 
-## Consultants
+description <- samples_mixed$Description
+joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
+            "Co-Creator", "Synergist")
 
-```{r Cook-Greuter-Results, echo=FALSE}
-consultants <- results_df %>% filter(Sample < 4)
-ggplot(consultants, aes(x = Stage, y = Percentage, shape=factor(Sample))) + geom_point() +
+ggplot(results_mixed, aes(x = Stage, y = Percentage)) + geom_point() +
   geom_line() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous() +
   theme_tufte() +
-  labs(shape = "Sample")
+  labs(title = description)
 ```
 
-## Agile Consultants
+## Consultants
 
-```{r Anonymize-Results, echo=FALSE}
-path_source <- file.path(base_dir, "_data", "Source-GLP.csv")
-profile_df <- read.csv(path_source, stringsAsFactors = FALSE)
-profile_columns <- profile_df %>% select(Profile, Ogive, Modifier)
-profile_columns %>% arrange(Ogive, Modifier)
+```{r Cook-Greuter-Results, echo=FALSE}
+consultants <- results_df %>%
+  filter(Sample < 4) %>%
+  inner_join(samples_df, by = "Sample")
+ggplot(consultants, aes(x = Stage, y = Percentage, shape=Description)) + geom_point() +
+  geom_line() +
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous() +
+  theme_tufte() +
+  labs(shape = "Sample", title = "Bell-like distribution of stages")
 ```
+
+## Agile Consultant Team
 
 ```{r Distribute-Profiles, echo=FALSE}
-consultant_team <- profile_df %>% filter(ACN == TRUE, Client == TRUE)
-ggplot(consultant_team, aes(x = Ogive)) + geom_bar() +
+profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
+profile_df <- read.csv(profile_path, stringsAsFactors = FALSE) %>%
+  select(Profile, ACN, Client, Ogive, Modifier) %>%
+  arrange(Ogive, Modifier) %>%
+  filter(ACN == TRUE, Client == TRUE) %>%
+  mutate(Member = row_number())
+ggplot(profile_df, aes(x = Ogive)) + geom_bar() +
   theme_tufte() +
   labs(x = "Stage")
 # Bar charts can't have orange, green, and teal?
@@ -78,11 +89,13 @@ ggplot(consultant_team, aes(x = Ogive)) + geom_bar() +
 ```
 
 ```{r Early, echo=FALSE}
-early_profile <- profile_df[which.min(profile_df$Ogive + profile_df$Modifier), "Profile"]
-path_stems <- file.path(base_dir, "_data", "Score-GLP.csv")
-stems_df <- read.csv(path_stems, stringsAsFactors = FALSE)
+stems_path <- file.path(base_dir, "_data", "Score-GLP.csv")
+stems_df <- read.csv(stems_path, stringsAsFactors = FALSE) %>%
+  inner_join(profile_df, by = "Profile") %>%
+  arrange(Member, Stage) %>%
+  mutate(Description = paste("Team Member", Member))
 stems_max <- stems_df[which.max(stems_df$Stems), "Stems"]
-early <- stems_df %>% filter(Profile == early_profile)
+early <- stems_df %>% filter(Member == 1)
 ggplot(early, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous(limits = c(0,stems_max)) +
@@ -90,8 +103,8 @@ ggplot(early, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
 ```
 
 ```{r Late, echo=FALSE}
-late_profile <- profile_df[which.max(profile_df$Ogive + profile_df$Modifier), "Profile"]
-late <- stems_df %>% filter(Profile == late_profile)
+member_max <- profile_df[which.max(profile_df$Member), "Member"]
+late <- stems_df %>% filter(Member == member_max)
 ggplot(late, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous(limits = c(0,stems_max)) +
@@ -99,22 +112,22 @@ ggplot(late, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
 ```
 
 ```{r Early+Late, echo=FALSE}
-early_late <- stems_df %>% filter(Profile %in% c(early_profile, late_profile))
-ggplot(early_late, aes(x = Stage, y = Stems, color=Profile)) + geom_point() + geom_smooth() +
+early_late <- stems_df %>% filter(Member %in% c(1, member_max))
+ggplot(early_late, aes(x = Stage, y = Stems, color=factor(Member))) + geom_point() + geom_smooth() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous(limits = c(0,stems_max)) +
   theme_tufte()
 ```
 
 ```{r Score-Profile, echo=FALSE}
-ggplot(profile_df, aes(x = factor(Initials), y = Ogive + Modifier)) + geom_point() +
-  theme_tufte()
+# ggplot(profile_df, aes(x = factor(Initials), y = Ogive + Modifier)) + geom_point() +
+#   theme_tufte()
 ```
 
 ```{r Score-Stems, echo=FALSE}
 ggplot(stems_df, aes(x = Stage, y = Stems)) + geom_point() + geom_smooth() +
   coord_cartesian(xlim=c(2,9), ylim=c(0,stems_max)) +
-  facet_wrap( ~ Profile) +
+  facet_wrap( ~ Member) +
   theme_tufte()
 ```
 
