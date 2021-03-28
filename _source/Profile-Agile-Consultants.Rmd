@@ -50,7 +50,7 @@ description <- samples_mixed$Description
 joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
             "Co-Creator", "Synergist")
 
-ggplot(results_mixed, aes(x = Stage, y = Percentage)) + geom_point() +
+ggplot(results_mixed, aes(x = Rating, y = Percentage)) + geom_point() +
   geom_line() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous() +
@@ -64,7 +64,7 @@ ggplot(results_mixed, aes(x = Stage, y = Percentage)) + geom_point() +
 consultants <- results_df %>%
   filter(Sample < 4) %>%
   inner_join(samples_df, by = "Sample")
-ggplot(consultants, aes(x = Stage, y = Percentage, shape=Description)) + geom_point() +
+ggplot(consultants, aes(x = Rating, y = Percentage, shape=Description)) + geom_point() +
   geom_line() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous() +
@@ -82,7 +82,7 @@ profile_df <- read.csv(profile_path, stringsAsFactors = FALSE) %>%
   filter(ACN == TRUE, Client == TRUE) %>%
   mutate(Member = row_number())
 ggplot(profile_df, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
-  labs(x = "Stage") +
+  labs(x = "Rating") +
   scale_fill_manual(values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   theme_tufte() +
