@@ -17,6 +17,11 @@ title: Profile Agile Consultants
 ---
 
 ```{r setup, include=FALSE}
+library(knitr)
+# library(kableExtra)
+library(tidyverse)
+library("ggthemes")
+
 base_dir <- "~/Documents/GitHub/rowdenw.github.io"
 base_url <- "/"
 fig_path <- "images/"
@@ -27,8 +32,6 @@ knitr::opts_chunk$set(fig.path = fig_path,
                       cache.path = '../_cache/',
                       message=FALSE, warning=FALSE,
                       cache = FALSE) # Change to TRUE for publication.
-library(tidyverse)
-library("ggthemes")
 ```
 
 ## Adults
@@ -36,10 +39,13 @@ library("ggthemes")
 ```{r Cook-Greuter-Samples, echo=FALSE}
 results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
 samples_path <- file.path(base_dir, "_data", "Cook-Greuter-Samples.csv")
+stages_path <- file.path(base_dir, "_data", "Name-Stages.csv")
 
 results_df <- read.csv(results_path, stringsAsFactors = FALSE)
 samples_df <- read.csv(samples_path, stringsAsFactors = FALSE) %>%
-  mutate(Description = paste("N=", .$Count, " ", .$Country, " ", .$Population, sep=""))
+  mutate(Description = paste0("N=", .$Count, " ", .$Country, " ", .$Population))
+stages_df <- read.csv(stages_path, stringsAsFactors = FALSE) %>%
+  filter(Researcher == "Joiner")
 ```
 
 ```{r Cook-Greuter-Mixed-Adults, echo=FALSE}
@@ -56,6 +62,11 @@ ggplot(results_mixed, aes(x = Rating, y = Percentage)) + geom_point() +
   scale_y_continuous() +
   theme_tufte() +
   labs(title = description)
+results_mixed %>% 
+  select(Rating, Percentage) %>%
+  inner_join(stages_df, by = c("Rating" = "E")) %>%
+  select(Name, Percentage) %>%
+  kable(booktabs = TRUE, col.names = c("Level", description))
 ```
 
 ## Consultants
