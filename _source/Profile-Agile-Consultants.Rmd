@@ -77,15 +77,14 @@ ggplot(consultants, aes(x = Stage, y = Percentage, shape=Description)) + geom_po
 ```{r Distribute-Profiles, echo=FALSE}
 profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
 profile_df <- read.csv(profile_path, stringsAsFactors = FALSE) %>%
-  select(Profile, ACN, Client, Ogive, Modifier) %>%
-  arrange(Ogive, Modifier) %>%
+  select(Profile, ACN, Client, Rating, Modifier) %>%
+  arrange(Rating, Modifier) %>%
   filter(ACN == TRUE, Client == TRUE) %>%
   mutate(Member = row_number())
-ggplot(profile_df, aes(x = Ogive)) + geom_bar() +
+ggplot(profile_df, aes(x = Rating)) + geom_bar() +
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   theme_tufte() +
   labs(x = "Stage")
-# Bar charts can't have orange, green, and teal?
-# + scale_color_manual(values = c("#FF8000", "#00FF00", "#008080"))
 ```
 
 ```{r Early, echo=FALSE}
@@ -120,7 +119,7 @@ ggplot(early_late, aes(x = Stage, y = Stems, color=factor(Member))) + geom_point
 ```
 
 ```{r Score-Profile, echo=FALSE}
-# ggplot(profile_df, aes(x = factor(Initials), y = Ogive + Modifier)) + geom_point() +
+# ggplot(profile_df, aes(x = factor(Initials), y = Rating + Modifier)) + geom_point() +
 #   theme_tufte()
 ```
 
