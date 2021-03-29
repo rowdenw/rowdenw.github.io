@@ -73,15 +73,15 @@ Photo by [Benjamin Lim](https://scop.io/collections/vendors?q=Benjamin+Lim) on [
 
 If the deeper wisdom and understanding of later levels of development could help with thinking about climate change, how many people are able to take on the challenge? Susanne R. Cook-Greuter’s 1999 study of 4510 United States adults[^9] shows the thickness of the various layers[^5] in the “layer cake of society.”[^10]
 
-| Level      | N=4510 USA (1999) mixed adult population |
-| :--------- | ---------------------------------------: |
-| Operator   |                                      4.3 |
-| Conformer  |                                     11.3 |
-| Expert     |                                     36.5 |
-| Achiever   |                                     29.7 |
-| Catalyst   |                                     11.3 |
-| Co-Creator |                                      4.9 |
-| Synergist  |                                      1.5 |
+| Level      | N=4510 USA (1999) mixed adult population (%) |
+| :--------- | -------------------------------------------: |
+| Operator   |                                          4.3 |
+| Conformer  |                                         11.3 |
+| Expert     |                                         36.5 |
+| Achiever   |                                         29.7 |
+| Catalyst   |                                         11.3 |
+| Co-Creator |                                          4.9 |
+| Synergist  |                                          1.5 |
 
 Studies like these suggest that the portion of adults with a complex worldview and an intergenerational perspective is small.
 
