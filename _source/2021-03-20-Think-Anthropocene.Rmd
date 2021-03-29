@@ -48,16 +48,16 @@ Approaching the impacts as independent and isolated problems, solved by nation-s
 
 The systems and complexity thinking in this report is the kind of thinking that comes with later [adult development]({% post_url 2021-03-07-What-Is-Growing-Up %}) and requires a [shifts in thinking]({% post_url 2021-03-14-Grown-Up-Thinking %}). As we grow through the stages of adult development, we think in more complex, systemic, strategic, and interdependent ways.`[^3]`{=markdown} 
 
-`<div class="mermaid">`{=html}
-`graph LR`{=html}
-	`classDef default fill:#FFFFFF, stroke:#FFFFFF`{=html}
-	`linear --> branching --> circular`{=html}
-	`simple --> complicated --> complex`{=html}
-	`static --> dynamic`{=html}
-	`separate --> interconnected`{=html}
-	`dependent --> independent --> interdependent`{=html}
-	`one-dimenstional --> multidimensional`{=html}
-`</div>`{=html}
+`<div class="mermaid">
+graph LR;
+	classDef default fill:#FFFFFF, stroke:#FFFFFF;
+	linear --> branching --> circular;
+	simple --> complicated --> complex;
+	static --> dynamic;
+	separate --> interconnected;
+	dependent --> independent --> interdependent;
+	one-dimenstional --> multidimensional;
+</div>`{=html}
 
 ## Time Span
 
