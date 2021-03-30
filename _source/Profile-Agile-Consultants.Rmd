@@ -87,12 +87,13 @@ ggplot(consultants, aes(x = Rating, y = Percentage, shape=Description)) + geom_p
 
 ```{r Distribute-Profiles, echo=FALSE}
 profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
-profile_df <- read.csv(profile_path, stringsAsFactors = FALSE) %>%
+profile_df <- read.csv(profile_path, stringsAsFactors = FALSE)
+team <- profile_df %>%
   select(Profile, ACN, Client, Rating, Modifier) %>%
   arrange(Rating, Modifier) %>%
   filter(ACN == TRUE, Client == TRUE) %>%
   mutate(Member = row_number())
-ggplot(profile_df, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
+ggplot(team, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
   labs(x = "Rating") +
   scale_fill_manual(values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
@@ -102,14 +103,15 @@ ggplot(profile_df, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
 
 ```{r Early, echo=FALSE}
 stems_path <- file.path(base_dir, "_data", "Score-GLP.csv")
-stems_df <- read.csv(stems_path, stringsAsFactors = FALSE) %>%
-  inner_join(profile_df, by = "Profile") %>%
+stems_df <- read.csv(stems_path, stringsAsFactors = FALSE)
+team_stems <- stems_df  %>%
+  inner_join(team, by = "Profile") %>%
   arrange(Member, Stage) %>%
   mutate(Description = paste("Team Member", Member)) %>%
   group_by(Member) %>%
   mutate(Ogive = cumsum((Stems)))
 stems <- 30
-early <- stems_df %>% filter(Member == 1)
+early <- team_stems %>% filter(Member == 1)
 ggplot(early, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
   geom_smooth() +
   scale_color_manual("Rating",
@@ -117,12 +119,13 @@ ggplot(early, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() 
                      values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte()
+  theme_tufte() +
+  labs(y = "Cumulative Stems")
 ```
 
 ```{r Late, echo=FALSE}
-member_max <- profile_df[which.max(profile_df$Member), "Member"]
-late <- stems_df %>% filter(Member == member_max)
+member_max <- team[which.max(team$Member), "Member"]
+late <- team_stems %>% filter(Member == member_max)
 ggplot(late, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
   geom_smooth() +
   scale_color_manual("Rating",
@@ -130,11 +133,12 @@ ggplot(late, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
                      values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte()
+  theme_tufte() +
+  labs(y = "Cumulative Stems")
 ```
 
 ```{r Early+Late, echo=FALSE}
-early_late <- stems_df %>% filter(Member %in% c(1, member_max))
+early_late <- team_stems %>% filter(Member %in% c(1, member_max))
 ggplot(early_late, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point() +
   geom_smooth() +
   scale_color_manual("Rating",
@@ -142,17 +146,44 @@ ggplot(early_late, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point
                      values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
   scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte()
+  theme_tufte() +
+  labs(y = "Cumulative Stems")
 ```
 
 ```{r Score-Stems, echo=FALSE}
-ggplot(stems_df, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
+ggplot(team_stems, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
   geom_smooth() +
   coord_cartesian(xlim=c(2,9), ylim=c(0,stems)) +
   facet_wrap(~ Member) +
   scale_color_manual("Rating",
                      labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
                      values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  theme_tufte()
+  theme_tufte() +
+  labs(y = "Cumulative Stems")
+```
+
+```{r Deliberately-Develop, echo=FALSE}
+private_path <- file.path(base_dir, "_data", "Private.csv")
+private_df <- read.csv(private_path, stringsAsFactors = FALSE)
+multiple <- private_df %>%
+  group_by(Name) %>%
+  filter(n() > 1) %>%
+  inner_join(profile_df)
+initial <- multiple[which.min(multiple$Year), "Profile"]
+subsequent <- multiple[which.max(multiple$Year), "Profile"]
+comparison <- stems_df  %>%
+  filter(Profile %in% c(initial, subsequent)) %>%
+  inner_join(profile_df, by = "Profile") %>%
+  group_by(Profile) %>%
+  mutate(Ogive = cumsum((Stems)))
+ggplot(comparison, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point() +
+  geom_smooth() +
+  scale_color_manual("Rating",
+                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
+                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
+  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  scale_y_continuous(limits = c(0,stems)) +
+  theme_tufte() +
+  labs(y = "Cumulative Stems")
 ```
 
