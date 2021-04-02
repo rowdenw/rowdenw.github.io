@@ -13,7 +13,7 @@ title: Grown-Up Thinking
 
 ~ Gregory Bateson[^1]
 
-Major problems in the world--[nuclear war](https://80000hours.org/problem-profiles/nuclear-security/), [climate change](https://80000hours.org/problem-profiles/climate-change/), [pandemics](https://80000hours.org/problem-profiles/global-catastrophic-biological-risks/), [artificial intelligence](https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/), biotechnology, etc.--means that we have a nonzero [probability of self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). How can we learn to think in ways that better understand?:
+Major problems in the world--[nuclear war](https://80000hours.org/problem-profiles/nuclear-security/), [climate change](https://80000hours.org/problem-profiles/climate-change/), [pandemics](https://80000hours.org/problem-profiles/global-catastrophic-biological-risks/), [artificial intelligence](https://80000hours.org/problem-profiles/positively-shaping-artificial-intelligence/), biotechnology, etc.--mean that we have a nonzero [probability of self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). How can we learn to think in ways that better understand?:
 
 * foreign relations between nuclear powers,
 * climatic systems,
@@ -31,7 +31,7 @@ Koplowitz sees three groups of stages in adult cognitive development:[^3]
 * logical, and
 * post-logical.
 
-Into these groups I'll place stages of [vertical development]({% post_url 2021-03-07-What-Is-Growing-Up %}) (using [Bill Joiner](https://changewise.biz/?page_id=249&..)'s names), and discuss example problems, solutions, and tools from my [workday experience](https://rowdenw.github.io/about/) with management that illustrate thinking in more complex, systemic, and interdependent ways.[^4]
+Into these groups I'll place stages of [vertical development]({% post_url 2021-03-07-What-Is-Growing-Up %}) (using [Bill Joiner](https://changewise.biz/?page_id=249&..)'s names), and discuss example problems, solutions, and tools from my [workday experience](https://rowdenw.github.io/about/) with management that illustrate how we can think in more complex, systemic, and interdependent ways.[^4]
 
 ## Pre-Logical Thinking
 
