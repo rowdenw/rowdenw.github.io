@@ -3,18 +3,22 @@ output:
   md_document:
     variant: gfm
     preserve_yaml: TRUE
+    pandoc_args:
+      - "--wrap=preserve"
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
 author: "William C. Rowden"
 date: "2021-03-21"
 discussion_id: Profile-Agile-Consultans
-excerpt: ""
+excerpt: How can we grow deeper in wisdom and understanding? The experience of an Agile consultant team suggests some ways.
 layout: post
 mermaid: false
 tags:
   - growing up
 title: Profile Agile Consultants
 ---
+
+How can we grow deeper in wisdom and understanding, into ["post logical" thinking]({% post_url 2021-03-14-Grown-Up-Thinking %})? The experience of an Agile consultant team might suggest some ways.
 
 ```{r setup, include=FALSE}
 library(knitr)
@@ -24,7 +28,7 @@ library("ggthemes")
 
 base_dir <- "~/Documents/GitHub/rowdenw.github.io"
 base_url <- "/"
-fig_path <- "images/"
+fig_path <- "images/2021-04-03-"
 
 knitr::opts_knit$set(base.dir = base_dir, base.url = base_url)
 knitr::opts_chunk$set(echo = TRUE)
@@ -34,7 +38,9 @@ knitr::opts_chunk$set(fig.path = fig_path,
                       cache = FALSE) # Change to TRUE for publication.
 ```
 
-## Adults
+## Mixed Adult Population
+
+Most people grow rapidly through [development stages]({% post_url 2021-03-07-What-Is-Growing-Up %}) into adolescence and then plateau in early adulthood (so that the correlation between age and stage is about 0.40 among adolescents and around 0.04 among adults, across studies involving more than 12,000 people).`[^a]`{=markdown} As a result, a 1999 mixed sample of 4510 adults in the United States--including accountants and artists, priests and prisoners, in ages ranging from 18 to 82 (with ages 35 to 65 most represented)--shows a mode (peak) at Expert, with fewer adults at an earlier or later stage.`[^b]`{=markdown}
 
 ```{r Cook-Greuter-Samples, echo=FALSE}
 results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
@@ -52,7 +58,7 @@ stages_df <- read.csv(stages_path, stringsAsFactors = FALSE) %>%
 results_mixed <- results_df %>% filter(Sample == 1)
 samples_mixed <- samples_df %>% filter(Sample == 1)
 
-description <- samples_mixed$Description
+description <- paste(samples_mixed$Description, "(%)")
 joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
             "Co-Creator", "Synergist")
 
@@ -62,14 +68,11 @@ ggplot(results_mixed, aes(x = Rating, y = Percentage)) + geom_point() +
   scale_y_continuous() +
   theme_tufte() +
   labs(title = description)
-results_mixed %>% 
-  select(Rating, Percentage) %>%
-  inner_join(stages_df, by = c("Rating" = "E")) %>%
-  select(Name, Percentage) %>%
-  kable(booktabs = TRUE, col.names = c("Level", description))
 ```
 
 ## Consultants
+
+However, other samples show a different bell-like distribution of stages; for example, a sample of 535 managers and consultants in the UK had a mode at Achiever.`[^b]`{=markdown}
 
 ```{r Cook-Greuter-Results, echo=FALSE}
 consultants <- results_df %>%
@@ -83,7 +86,28 @@ ggplot(consultants, aes(x = Rating, y = Percentage, shape=Description)) + geom_p
   labs(shape = "Sample", title = "Bell-like distribution of stages")
 ```
 
-## Agile Consultant Team
+This comparison could prompt multiple questions for further research:
+
+* Is the difference between samples significant?
+* The inclination to find out about one's own personality make-up via testing rarely occurs before the Achiever stage, with Conformer and Expert stages not requesting feedback.`[^b]`{=markdown} Is the variation in samples due to self-selection?
+* Development can occur when the interpersonal environment disconfirms expectations characteristic of a specific stage.`[^a]`{=markdown} Does this environment vary across countries?
+* Prior to the Achiever stage, role-taking experiences can facilitate development,`[^a]`{=markdown} and the Co-Creator stage enjoys a variety of roles.`[^c]`{=markdown} Does the variety of engagements in consulting work provide these role-taking experiences?
+* Post-conventional personalities--at the Catalyst, Co-Creator, and Synergist stages--don't often remain long in large corporations.`[^e]`{=markdown} Does this affect the prevalence of these stages among managers and supervisors?
+
+## Agile Consultants
+
+Agile software development started with a manifesto from those who are "are uncovering better ways of developing software by... helping others do it."`[^d]`{=markdown} I selected a team of Agile consultants from a what an owner described as a boutique Agile consultancy (later acquired by a multinational consultancy). After approximately 50 minutes of the hour-long interview, I provided feedback (in [Perfection Game](https://liveingreatness.com/core-protocols/perfection-game/) form) on the answers I heard to my questions in the previous 50 minutes. I then observed how the feedback was integrated into the conversation.
+
+This approach comes from a developmental perspective.`[^f]`{=markdown}
+
+```{r Feedback, echo=FALSE}
+feedback_path <- file.path(base_dir, "_data", "Feedback.csv")
+read.csv(feedback_path, stringsAsFactors = FALSE) %>%
+  filter(Researcher == "Cook-Greuter") %>%
+  inner_join(stages_df, by = "E") %>%
+  select(Name, Feedback) %>%
+  kable(booktabs = TRUE, col.names = c("Stage", "The Concept of Feedback"))
+```
 
 ```{r Distribute-Profiles, echo=FALSE}
 profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
@@ -187,3 +211,19 @@ ggplot(comparison, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point
   labs(y = "Cumulative Stems")
 ```
 
+## Conclusion
+
+* consultant aspects that encourage growth
+* Agile aspects that encourage growth
+* horizontal decalage
+* feedback as it relates to growth
+* deliberate development
+
+## Notes
+
+`[^a]`{=markdown}: Cohn, L.D. (1998) Age trends in personality development: A quantitative review. In _Personality development: Theoretical, empirical, and clinical investigations of Loevinger’s conception of ego development_; Lawrence Erlbaum Associates Publishers: Mahwah, NJ, US; pp. 133–143 [ISBN 978-0-8058-1649-5](https://isbn.nu/9780805816495).
+`[^b]`{=markdown}: Cook-Greuter, S.R. (2013) [Nine Levels Of Increasing Embrace In Ego Development: A Full-Spectrum Theory Of Vertical Growth And Meaning Making](http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf). *Prepublication version*, 97.
+`[^c]`{=markdown}: "Co-Creator" is called "Transforming" in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
+`[^d]`{=markdown}: Kent Beck, et al. (2001) [Manifesto for Agile Software Development](https://agilemanifesto.org/).
+`[^e]`{=markdown}: Personal correspondence with Global Leadership Associates (2017).
+`[^f]`{=markdown}: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. _Ind and Commercial Training_  *36*, 275–281, doi:[10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
