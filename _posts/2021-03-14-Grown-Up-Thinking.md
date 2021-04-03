@@ -1,6 +1,6 @@
 ---
 discussion_id: Grown-Up-Thinking
-excerpt: According to Gregory Bateson, the major problems in the world are the result of the difference between how nature works and the way people think. How can we learn to think in better ways?
+excerpt: According to Gregory Bateson, the major problems in the world are the result of the difference between how nature works and the way people think. How can we think in better ways?
 layout: post
 mermaid: true
 tags:
