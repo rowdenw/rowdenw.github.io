@@ -90,15 +90,22 @@ This comparison could prompt multiple questions for further research:
 
 * Is the difference between samples significant?
 * The inclination to find out about one's own personality make-up via testing rarely occurs before the Achiever stage, with Conformer and Expert stages not requesting feedback.`[^b]`{=markdown} Is the variation in samples due to self-selection?
-* Development can occur when the interpersonal environment disconfirms expectations characteristic of a specific stage.`[^a]`{=markdown} Does this environment vary across countries?
+* Development can occur when the interpersonal environment disconfirms expectations characteristic of a specific stage.`[^a]`{=markdown} Does this environment vary across national cultures?
 * Prior to the Achiever stage, role-taking experiences can facilitate development,`[^a]`{=markdown} and the Co-Creator stage enjoys a variety of roles.`[^c]`{=markdown} Does the variety of engagements in consulting work provide these role-taking experiences?
-* Post-conventional personalities--at the Catalyst, Co-Creator, and Synergist stages--don't often remain long in large corporations.`[^e]`{=markdown} Does this affect the prevalence of these stages among managers and supervisors?
+* Post-conventional personalities--at the Catalyst, Co-Creator, and Synergist stages--don't often remain long in large corporations.`[^e]`{=markdown} Does this reduce the prevalence of these stages among managers and supervisors?
 
 ## Agile Consultants
 
-Agile software development started with a manifesto from those who are "are uncovering better ways of developing software by... helping others do it."`[^d]`{=markdown} I selected a team of Agile consultants from a what an owner described as a boutique Agile consultancy (later acquired by a multinational consultancy). After approximately 50 minutes of the hour-long interview, I provided feedback (in [Perfection Game](https://liveingreatness.com/core-protocols/perfection-game/) form) on the answers I heard to my questions in the previous 50 minutes. I then observed how the feedback was integrated into the conversation.
+Agile software development started with a manifesto from those who are "are uncovering better ways of developing software by... helping others do it."`[^d]`{=markdown} One of the [principles behind the Agile Manifesto](https://agilemanifesto.org/principles.html) is this:
 
-This approach comes from a developmental perspective.`[^f]`{=markdown}
+> At regular intervals, the team reflects on how to become more effective, then tunes and adjusts
+> its behavior accordingly.
+
+Agile practices involve the application of the scientific method to social management, through iterative cycles of identifying a problem, planning, acting, and evaluating empirical phenomena—the “Deming Wheel” of Plan-Do-Study-Act (PDSA).`[^g]`{=markdown} Consequently feedback is fundamental to Agile practice.
+
+I selected a team of Agile consultants from a what an owner described as a boutique Agile consultancy (later acquired by a multinational consultancy). After approximately 50 minutes of the hour-long interview, I provided feedback (in [Perfection Game](https://liveingreatness.com/core-protocols/perfection-game/) form) on the answers I heard to my questions in the previous 50 minutes. I then observed how the feedback was integrated into the conversation.
+
+This approach comes from a developmental perspective.`[^f]`{=markdown} It is inquiring whether the *espoused theory* of the value of feedback in Agile is part of the *theory-in-use* of the Agile consultant.`[^h]`{=markdown}
 
 ```{r Feedback, echo=FALSE}
 feedback_path <- file.path(base_dir, "_data", "Feedback.csv")
@@ -106,8 +113,27 @@ read.csv(feedback_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Cook-Greuter") %>%
   inner_join(stages_df, by = "E") %>%
   select(Name, Feedback) %>%
-  kable(booktabs = TRUE, col.names = c("Stage", "The Concept of Feedback"))
+  kable(booktabs = TRUE, col.names = c("Level", "The Concept of Feedback"))
 ```
+
+In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a [sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %}). In 2018 the 13 full-time members of the consultant team, Agile coaches and an Agile coordinator, took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within a half-stage the vast majority of the time.`[^i]`{=markdown}
+
+```{r Descriptions, echo=FALSE}
+description_path <- file.path(base_dir, "_data", "Description.csv")
+read.csv(description_path, stringsAsFactors = FALSE) %>%
+  filter(Researcher == "Torbert") %>%
+  inner_join(stages_df, by = "E") %>%
+  select(Name, Description) %>%
+  kable(booktabs = TRUE, col.names = c("Level", "Description"))
+```
+
+The profile ratings were the following:
+
+- 4 Achiever,
+- 8 Catalyst, and
+- 2 Co-Creator.
+
+Note that this small sample has a later mode (Catalyst) than previous larger studies.
 
 ```{r Distribute-Profiles, echo=FALSE}
 profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
@@ -125,92 +151,6 @@ ggplot(team, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
   theme(legend.position = "none")
 ```
 
-```{r Early, echo=FALSE}
-stems_path <- file.path(base_dir, "_data", "Score-GLP.csv")
-stems_df <- read.csv(stems_path, stringsAsFactors = FALSE)
-team_stems <- stems_df  %>%
-  inner_join(team, by = "Profile") %>%
-  arrange(Member, Stage) %>%
-  mutate(Description = paste("Team Member", Member)) %>%
-  group_by(Member) %>%
-  mutate(Ogive = cumsum((Stems)))
-stems <- 30
-early <- team_stems %>% filter(Member == 1)
-ggplot(early, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
-```
-
-```{r Late, echo=FALSE}
-member_max <- team[which.max(team$Member), "Member"]
-late <- team_stems %>% filter(Member == member_max)
-ggplot(late, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
-```
-
-```{r Early+Late, echo=FALSE}
-early_late <- team_stems %>% filter(Member %in% c(1, member_max))
-ggplot(early_late, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
-```
-
-```{r Score-Stems, echo=FALSE}
-ggplot(team_stems, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
-  geom_smooth() +
-  coord_cartesian(xlim=c(2,9), ylim=c(0,stems)) +
-  facet_wrap(~ Member) +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
-```
-
-```{r Deliberately-Develop, echo=FALSE}
-private_path <- file.path(base_dir, "_data", "Private.csv")
-private_df <- read.csv(private_path, stringsAsFactors = FALSE)
-multiple <- private_df %>%
-  group_by(Name) %>%
-  filter(n() > 1) %>%
-  inner_join(profile_df)
-initial <- multiple[which.min(multiple$Year), "Profile"]
-subsequent <- multiple[which.max(multiple$Year), "Profile"]
-comparison <- stems_df  %>%
-  filter(Profile %in% c(initial, subsequent)) %>%
-  inner_join(profile_df, by = "Profile") %>%
-  group_by(Profile) %>%
-  mutate(Ogive = cumsum((Stems)))
-ggplot(comparison, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
-```
-
 ## Conclusion
 
 * consultant aspects that encourage growth
@@ -225,5 +165,9 @@ ggplot(comparison, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point
 `[^b]`{=markdown}: Cook-Greuter, S.R. (2013) [Nine Levels Of Increasing Embrace In Ego Development: A Full-Spectrum Theory Of Vertical Growth And Meaning Making](http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf). *Prepublication version*, 97.
 `[^c]`{=markdown}: "Co-Creator" is called "Transforming" in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
 `[^d]`{=markdown}: Kent Beck, et al. (2001) [Manifesto for Agile Software Development](https://agilemanifesto.org/).
-`[^e]`{=markdown}: Personal correspondence with Global Leadership Associates (2017).
+`[^e]`{=markdown}: Personal communication with Global Leadership Associates (2017).
 `[^f]`{=markdown}: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. _Ind and Commercial Training_  *36*, 275–281, doi:[10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
+`[^g]`{=markdown}: Moen, R.D.; Norman, C.L. (2010) [Circling Back](http://www.apiweb.org/circling-back.pdf). _Quality Progress_ *43*, 22–28.
+`[^h]`{=markdown}: Argyris, C.; Schon, D.A. (1974) _Theory in Practice: Increasing Professional Effectiveness_; 1st edition.; Jossey-Bass Publishers: San Francisco; [ISBN 978-0-87589-230-6](https://isbn.nu/9780875892306).
+`[^i]`{=markdown}: Including my profile, my estimate matched the profile four times, was mismatched by 0.5 stage five times, was mismatched by 1 stage one time, was mismatched by 1.5 stages two times, and was mismatched by 2 stages one time.
+
