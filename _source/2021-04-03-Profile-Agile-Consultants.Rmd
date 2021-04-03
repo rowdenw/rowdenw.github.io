@@ -6,9 +6,8 @@ output:
     pandoc_args:
       - "--wrap=preserve"
 knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "William C. Rowden"
-date: "2021-03-21"
 discussion_id: Profile-Agile-Consultans
 excerpt: How can we grow deeper in wisdom and understanding? Experience with an Agile consultant team might suggest some ways.
 layout: post
@@ -18,7 +17,7 @@ tags:
 title: Profile Agile Consultants
 ---
 
-How can we grow deeper in wisdom and understanding, into ["post logical" thinking]({% post_url 2021-03-14-Grown-Up-Thinking %})? Experience with an Agile consultant team might suggest some ways.
+How can we grow deeper in wisdom and understanding, into `["post logical" thinking]({% post_url 2021-03-14-Grown-Up-Thinking %})`{=markdown}? Experience with an Agile consultant team might suggest some ways.
 
 ```{r setup, include=FALSE}
 library(knitr)
@@ -40,7 +39,7 @@ knitr::opts_chunk$set(fig.path = fig_path,
 
 ## Mixed Adult Population
 
-Most people grow rapidly through [development stages]({% post_url 2021-03-07-What-Is-Growing-Up %}) into adolescence and then plateau in early adulthood (so that the correlation between age and stage is about 0.40 among adolescents and around 0.04 among adults, across studies involving more than 12,000 people).`[^a]`{=markdown} As a result, a 1999 mixed sample of 4510 adults in the United States--including accountants and artists, priests and prisoners, in ages ranging from 18 to 82 (with ages 35 to 65 most represented)--shows a mode (peak) at Expert, with fewer adults at an earlier or later stage.`[^b]`{=markdown}
+Most people grow rapidly through `[development stages]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} into adolescence and then plateau in early adulthood (so that the correlation between age and stage is about 0.40 among adolescents and around 0.04 among adults, across studies involving more than 12,000 people).`[^a]`{=markdown} As a result, a 1999 mixed sample of 4510 adults in the United States--including accountants and artists, priests and prisoners, in ages ranging from 18 to 82 (with ages 35 to 65 most represented)--shows a mode (peak) at Expert, with fewer adults at an earlier or later stage.`[^b]`{=markdown}
 
 ```{r Cook-Greuter-Samples, echo=FALSE}
 results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
@@ -103,7 +102,7 @@ Agile software development started with a manifesto from those who are "are unco
 
 Agile practices involve the application of the scientific method to social management, through iterative cycles of identifying a problem, planning, acting, and evaluating empirical phenomena—the “Deming Wheel” of Plan-Do-Study-Act (PDSA).`[^g]`{=markdown} Consequently feedback is fundamental to Agile practice.
 
-I selected a team of Agile consultants from a what an owner described as a boutique Agile consultancy (later acquired by a multinational consultancy). After approximately 50 minutes of the hour-long interview, I provided feedback (in [Perfection Game](https://liveingreatness.com/core-protocols/perfection-game/) form) on the answers I heard to my questions in the previous 50 minutes. I then observed how the feedback was integrated into the conversation.
+I selected a team of Agile consultants from a what an owner described as a "boutique Agile consultancy" (later acquired by a multinational consultancy). After approximately 50 minutes of an hour-long interview, I provided feedback (in [Perfection Game](https://liveingreatness.com/core-protocols/perfection-game/) form) on the answers I had heard to my questions in the previous 50 minutes. I then observed how the feedback was integrated into the conversation.
 
 This approach comes from a developmental perspective.`[^f]`{=markdown} It is inquiring whether the *espoused theory* of the value of feedback in Agile is part of the *theory-in-use* of the Agile consultant.`[^h]`{=markdown} They "talk the talk" but do they "walk the walk"?
 
@@ -116,7 +115,7 @@ read.csv(feedback_path, stringsAsFactors = FALSE) %>%
   kable(booktabs = TRUE, col.names = c("Level", "The Concept of Feedback"))
 ```
 
-In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a [sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %}). In 2018 the 13 full-time members of the consultant team, Agile coaches and an Agile coordinator, took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within a half-stage the vast majority of the time.`[^i]`{=markdown}
+In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a `[sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown}. In 2018 the 13 full-time members of the consultant team--a dozen Agile coaches and one Agile coordinator--took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within a half-stage the vast majority of the time.`[^i]`{=markdown}
 
 ```{r Descriptions, echo=FALSE}
 description_path <- file.path(base_dir, "_data", "Description.csv")
@@ -153,11 +152,11 @@ ggplot(team, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
 
 ## Conclusion
 
-* consultant aspects that encourage growth
-* Agile aspects that encourage growth
-* horizontal decalage
-* feedback as it relates to growth
-* deliberate development
+My intent in interviewing, selecting, profiling, and providing feedback to Agile consultants was a transforming team, not rigorous statistical results. Nevertheless the results suggest that the following may, indeed, encourage growth:
+
+* role-taking experiences, such as those provided by consulting engagements;
+* a community that values feedback, like the Agile movement; and
+* accepting, welcoming, or even inviting direct personal feedback on a team.
 
 ## Notes
 
@@ -166,7 +165,7 @@ ggplot(team, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
 `[^c]`{=markdown}: "Co-Creator" is called "Transforming" in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
 `[^d]`{=markdown}: Kent Beck, et al. (2001) [Manifesto for Agile Software Development](https://agilemanifesto.org/).
 `[^e]`{=markdown}: Personal communication with Global Leadership Associates (2017).
-`[^f]`{=markdown}: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. _Ind and Commercial Training_  *36*, 275–281, doi:[10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
+`[^f]`{=markdown}: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. _Industrial and Commercial Training_  *36*, 275–281, doi [10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
 `[^g]`{=markdown}: Moen, R.D.; Norman, C.L. (2010) [Circling Back](http://www.apiweb.org/circling-back.pdf). _Quality Progress_ *43*, 22–28.
 `[^h]`{=markdown}: Argyris, C.; Schon, D.A. (1974) _Theory in Practice: Increasing Professional Effectiveness_; 1st edition.; Jossey-Bass Publishers: San Francisco; [ISBN 978-0-87589-230-6](https://isbn.nu/9780875892306).
 `[^i]`{=markdown}: Including my profile, my estimate matched the profile four times, was mismatched by 0.5 stage five times, was mismatched by 1 stage one time, was mismatched by 1.5 stages two times, and was mismatched by 2 stages one time.

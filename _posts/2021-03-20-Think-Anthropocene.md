@@ -19,7 +19,7 @@ title: Think About the Anthropocene
 
 > In fact, the pressures we exert on the planet have become so great that scientists are considering whether the Earth has entered an entirely new geological epoch: the Anthropocene, or the age of humans. It means that we are the first people to live in an age defined by human choice, in which the dominant risk to our survival is ourselves.[^1]
 
-The dominant risk to the survival of humanity–and possibly any [galactic intelligent life–is self-annihilation](%7B%%20post_url%202021-01-26-Estimate-Galactic-ETI%20%%7D). One example of the [major problems in the world](%7B%%20post_url%202021-03-14-Grown-Up-Thinking%20%%7D), perhaps “[the biggest problem facing humanity and our species as a whole](https://youtu.be/29ciz1TEXjI?t=166)” is climate change. Some of the challenges of thinking about climate change is that it’s “[wildly complex](https://youtu.be/9Pqp_8XLC6c?t=178),” with a [vast span in space and time](https://youtu.be/9Pqp_8XLC6c?t=255). The time span leads many Americans think of climate change as a [distant problem](https://youtu.be/DkZ7BJQupVA?t=90)–distant in time because the impacts won’t be felt for a generation or more. These challenges, of complexity and time span, are related to how we think. How many people are able to take on the challenge of climate change?
+The dominant risk to the survival of humanity–and possibly any [galactic intelligent life--is self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). One example of the [major problems in the world]({% post_url 2021-03-14-Grown-Up-Thinking %}), perhaps “[the biggest problem facing humanity and our species as a whole](https://youtu.be/29ciz1TEXjI?t=166)” is climate change. Some of the challenges of thinking about climate change is that it’s “[wildly complex](https://youtu.be/9Pqp_8XLC6c?t=178),” with a [vast span in space and time](https://youtu.be/9Pqp_8XLC6c?t=255). The time span leads many Americans think of climate change as a [distant problem](https://youtu.be/DkZ7BJQupVA?t=90)–distant in time because the impacts won’t be felt for a generation or more. These challenges, of complexity and time span, are related to how we think. How many people are able to take on the challenge of climate change?
 
 ## Complexity
 
@@ -34,7 +34,7 @@ The [overview to *The Next Frontier: Human Development and the Anthropocene*](ht
 
 Approaching the impacts as independent and isolated problems, solved by nation-states without shared [institutional decision-making](https://80000hours.org/problem-profiles/improving-institutional-decision-making/), can lead to dangerous unintended consequences.[^2]
 
-The systems and complexity thinking in this report is the kind of thinking that comes with later [adult development](%7B%%20post_url%202021-03-07-What-Is-Growing-Up%20%%7D) and requires a [shifts in thinking](%7B%%20post_url%202021-03-14-Grown-Up-Thinking%20%%7D). As we grow through the stages of adult development, we think in more complex, systemic, strategic, and interdependent ways.[^3]
+The systems and complexity thinking in this report is the kind of thinking that comes with later [adult development]({% post_url 2021-03-07-What-Is-Growing-Up %}) and requires a [shifts in thinking]({% post_url 2021-03-14-Grown-Up-Thinking %}). As we grow through the stages of adult development, we think in more complex, systemic, strategic, and interdependent ways.[^3]
 
 <div class="mermaid">
 graph LR;
