@@ -9,16 +9,14 @@ knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
 author: "William C. Rowden"
 date: "2021-03-21"
-discussion_id: Profile-Agile-Consultans
-excerpt: How can we grow deeper in wisdom and understanding? The experience of an Agile consultant team suggests some ways.
+discussion_id: Score-Agile-Consultans
+excerpt: 
 layout: post
 mermaid: false
 tags:
   - growing up
 title: Profile Agile Consultants
 ---
-
-How can we grow deeper in wisdom and understanding, into ["post logical" thinking]({% post_url 2021-03-14-Grown-Up-Thinking %})? The experience of an Agile consultant team might suggest some ways.
 
 ```{r setup, include=FALSE}
 library(knitr)
@@ -137,23 +135,5 @@ ggplot(comparison, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point
   labs(y = "Cumulative Stems")
 ```
 
-## Conclusion
-
-* consultant aspects that encourage growth
-* Agile aspects that encourage growth
-* horizontal decalage
-* feedback as it relates to growth
-* deliberate development
-
 ## Notes
-
-`[^a]`{=markdown}: Cohn, L.D. (1998) Age trends in personality development: A quantitative review. In _Personality development: Theoretical, empirical, and clinical investigations of Loevinger’s conception of ego development_; Lawrence Erlbaum Associates Publishers: Mahwah, NJ, US; pp. 133–143 [ISBN 978-0-8058-1649-5](https://isbn.nu/9780805816495).
-`[^b]`{=markdown}: Cook-Greuter, S.R. (2013) [Nine Levels Of Increasing Embrace In Ego Development: A Full-Spectrum Theory Of Vertical Growth And Meaning Making](http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf). *Prepublication version*, 97.
-`[^c]`{=markdown}: "Co-Creator" is called "Transforming" in Torbert, W.R. (n.d.) [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/).
-`[^d]`{=markdown}: Kent Beck, et al. (2001) [Manifesto for Agile Software Development](https://agilemanifesto.org/).
-`[^e]`{=markdown}: Personal communication with Global Leadership Associates (2017).
-`[^f]`{=markdown}: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. _Ind and Commercial Training_  *36*, 275–281, doi:[10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
-`[^g]`{=markdown}: Moen, R.D.; Norman, C.L. (2010) [Circling Back](http://www.apiweb.org/circling-back.pdf). _Quality Progress_ *43*, 22–28.
-`[^h]`{=markdown}: Argyris, C.; Schon, D.A. (1974) _Theory in Practice: Increasing Professional Effectiveness_; 1st edition.; Jossey-Bass Publishers: San Francisco; [ISBN 978-0-87589-230-6](https://isbn.nu/9780875892306).
-`[^i]`{=markdown}: Including my profile, my estimate matched the profile four times, was mismatched by 0.5 stage five times, was mismatched by 1 stage one time, was mismatched by 1.5 stages two times, and was mismatched by 2 stages one time.
 
