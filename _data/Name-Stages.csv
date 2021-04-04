@@ -7,14 +7,23 @@ Joiner,Level of Agility,6,Achiever
 Joiner,Level of Agility,7,Catalyst
 Joiner,Level of Agility,8,Co-Creator
 Joiner,Level of Agility,9,Synergist
+Cook-Greuter,Ego Development Stage,1,Symbiotic
 Cook-Greuter,Ego Development Stage,2,Implusive
 Cook-Greuter,Ego Development Stage,3,Self-defensive
 Cook-Greuter,Ego Development Stage,4,Conformist
 Cook-Greuter,Ego Development Stage,5,Self-conscious
 Cook-Greuter,Ego Development Stage,6,Conscientious
-Cook-Greuter,Ego Development Stage,7,Individualist
+Cook-Greuter,Ego Development Stage,7,Individualist-Pluralist
 Cook-Greuter,Ego Development Stage,8,Autonomous
 Cook-Greuter,Ego Development Stage,9,Construct-aware
+Cook-Greuter,Leadership Maturity,2,impulsive
+Cook-Greuter,Leadership Maturity,3,self-centric
+Cook-Greuter,Leadership Maturity,4,group-centric
+Cook-Greuter,Leadership Maturity,5,skill-centric
+Cook-Greuter,Leadership Maturity,6,self-determining
+Cook-Greuter,Leadership Maturity,7,self-questioning
+Cook-Greuter,Leadership Maturity,8,self-actualizing
+Cook-Greuter,Leadership Maturity,9,construct-aware
 Torbert,Action-Logic,3,Opportunist
 Torbert,Action-Logic,4,Diplomat
 Torbert,Action-Logic,5,Expert
