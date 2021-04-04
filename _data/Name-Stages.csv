@@ -1,9 +1,24 @@
 Researcher,Version,E,Name
-Joiner,,2,Enthusiast
-Joiner,,3,Operator
-Joiner,,4,Conformer
-Joiner,,5,Expert
-Joiner,,6,Achiever
-Joiner,,7,Catalyst
-Joiner,,8,Co-Creator
-Joiner,,9,Synergist
+Joiner,Level of Agility,2,Enthusiast
+Joiner,Level of Agility,3,Operator
+Joiner,Level of Agility,4,Conformer
+Joiner,Level of Agility,5,Expert
+Joiner,Level of Agility,6,Achiever
+Joiner,Level of Agility,7,Catalyst
+Joiner,Level of Agility,8,Co-Creator
+Joiner,Level of Agility,9,Synergist
+Cook-Greuter,Ego Development Stage,2,Implusive
+Cook-Greuter,Ego Development Stage,3,Self-defensive
+Cook-Greuter,Ego Development Stage,4,Conformist
+Cook-Greuter,Ego Development Stage,5,Self-conscious
+Cook-Greuter,Ego Development Stage,6,Conscientious
+Cook-Greuter,Ego Development Stage,7,Individualist
+Cook-Greuter,Ego Development Stage,8,Autonomous
+Cook-Greuter,Ego Development Stage,9,Construct-aware
+Torbert,Action-Logic,3,Opportunist
+Torbert,Action-Logic,4,Diplomat
+Torbert,Action-Logic,5,Expert
+Torbert,Action-Logic,6,Achiever
+Torbert,Action-Logic,7,Redefining
+Torbert,Action-Logic,8,Transforming
+Torbert,Action-Logic,9,Alchemical

@@ -94,7 +94,7 @@ results_df <- read.csv(results_path, stringsAsFactors = FALSE)
 samples_df <- read.csv(samples_path, stringsAsFactors = FALSE) %>%
   mutate(Description = paste0("N=", .$Count, " ", .$Country, " ", .$Population))
 stages_df  <- read.csv(stages_path, stringsAsFactors = FALSE) %>%
-  filter(Researcher == "Joiner")
+  filter(Researcher == "Joiner", Version == "Level of Agility", E > 1, E < 10)
 
 results_mixed <- results_df %>% filter(Sample == 1)
 samples_mixed <- samples_df %>% filter(Sample == 1)
