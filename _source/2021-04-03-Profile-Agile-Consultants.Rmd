@@ -34,7 +34,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.path = fig_path,
                       cache.path = '../_cache/',
                       message=FALSE, warning=FALSE,
-                      cache = FALSE) # Change to TRUE for publication.
+                      cache = TRUE)
 ```
 
 ## Mixed Adult Population
@@ -58,13 +58,14 @@ results_mixed <- results_df %>% filter(Sample == 1)
 samples_mixed <- samples_df %>% filter(Sample == 1)
 
 description <- paste(samples_mixed$Description, "(%)")
-joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
-            "Co-Creator", "Synergist")
+joiner <- c("2" = "Enthusiast", "3" = "Operator", "4" = "Conformer", "5" = "Expert",
+            "6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator", "9" = "Synergist")
+wilber <- c("2" = "magenta", "3" = "red", "4" = "#FFBF00", "5" = "#FFBF00",
+            "6" = "orange", "7" = "green", "8" = "#008080", "9" = "turquoise")
 
 ggplot(results_mixed, aes(x = Rating, y = Percentage)) + geom_point() +
   geom_line() +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous() +
   theme_tufte() +
   labs(title = description)
 ```
@@ -79,10 +80,9 @@ consultants <- results_df %>%
   inner_join(samples_df, by = "Sample")
 ggplot(consultants, aes(x = Rating, y = Percentage, shape=Description)) + geom_point() +
   geom_line() +
+  labs(shape = "Sample", title = "Bell-like distribution of stages") +
   scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
-  scale_y_continuous() +
-  theme_tufte() +
-  labs(shape = "Sample", title = "Bell-like distribution of stages")
+  theme_tufte()
 ```
 
 This comparison could prompt multiple questions for further research:
@@ -143,9 +143,9 @@ team <- profile_df %>%
   filter(ACN == TRUE, Client == TRUE) %>%
   mutate(Member = row_number())
 ggplot(team, aes(x = Rating, fill = factor(Rating))) + geom_bar() +
-  labs(x = "Rating") +
-  scale_fill_manual(values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+  labs(x = "Rating", title = "Agile Consultant Profiles") +
+  scale_fill_manual(values = wilber) +
+  scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
   theme_tufte() +
   theme(legend.position = "none")
 ```

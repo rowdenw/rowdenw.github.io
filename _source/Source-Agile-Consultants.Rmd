@@ -37,8 +37,10 @@ knitr::opts_chunk$set(fig.path = fig_path,
 ```
 
 ```{r Early, echo=FALSE}
-joiner <- c("Enthusiast", "Operator", "Conformer", "Expert", "Achiever", "Catalyst",
-            "Co-Creator", "Synergist")
+joiner <- c("2" = "Enthusiast", "3" = "Operator", "4" = "Conformer", "5" = "Expert",
+            "6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator", "9" = "Synergist")
+wilber <- c("2" = "magenta", "3" = "red", "4" = "#FFBF00", "5" = "#FFBF00",
+            "6" = "orange", "7" = "green", "8" = "#008080", "9" = "turquoise")
 
 profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
 profile_df <- read.csv(profile_path, stringsAsFactors = FALSE)
@@ -60,54 +62,57 @@ team_stems <- stems_df  %>%
   mutate(Ogive = cumsum((Stems)))
 stems <- 30
 early <- team_stems %>% filter(Member == 1)
-ggplot(early, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+ggplot(early) + 
+  geom_col(aes(x = Stage, y = Stems, fill = factor(Stage))) +
+  geom_line(aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  geom_point(aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  labs(y = "Cumulative Stems", title = early$Description) +
+  scale_color_manual("Rating", values = wilber) +
+  scale_fill_manual("Stage", values = wilber) +
+  scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
   scale_y_continuous(limits = c(0,stems)) +
   theme_tufte() +
-  labs(y = "Cumulative Stems")
+  theme(legend.position = "none")
 ```
 
 ```{r Late, echo=FALSE}
 member_max <- team[which.max(team$Member), "Member"]
 late <- team_stems %>% filter(Member == member_max)
-ggplot(late, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+ggplot(late) +
+  geom_col(aes(x = Stage, y = Stems, fill = factor(Stage))) +
+  geom_line(aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  geom_point(aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  labs(y = "Cumulative Stems", title = late$Description) +
+  scale_color_manual("Rating", values = wilber) +
+  scale_fill_manual("Stage", values = wilber) +
+  scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
   scale_y_continuous(limits = c(0,stems)) +
   theme_tufte() +
-  labs(y = "Cumulative Stems")
+  theme(legend.position = "none")
 ```
 
 ```{r Early+Late, echo=FALSE}
 early_late <- team_stems %>% filter(Member %in% c(1, member_max))
-ggplot(early_late, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+ggplot(early_late, aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  geom_line() +
+  geom_point() +
+  labs(y = "Cumulative Stems") +
+  scale_color_manual("Rating", labels = joiner, values = wilber) +
+  scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
   scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
+  theme_tufte()
 ```
 
 ```{r Score-Stems, echo=FALSE}
-ggplot(team_stems, aes(x = Stage, y = Ogive, color = factor(Rating))) + geom_point() +
-  geom_smooth() +
-  coord_cartesian(xlim=c(2,9), ylim=c(0,stems)) +
-  facet_wrap(~ Member) +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
+ggplot(team_stems, aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  facet_wrap(~ Member)+
+  geom_line() +
+  geom_point() +
+  labs(y = "Cumulative Stems") +
+  scale_color_manual("Rating", labels = joiner, values = wilber) +
+  scale_x_continuous(limits = c(2,10)) +
+  scale_y_continuous(limits = c(0,stems)) +
+  theme_tufte()
 ```
 
 ```{r Deliberately-Develop, echo=FALSE}
@@ -124,16 +129,21 @@ comparison <- stems_df  %>%
   inner_join(profile_df, by = "Profile") %>%
   group_by(Profile) %>%
   mutate(Ogive = cumsum((Stems)))
-ggplot(comparison, aes(x = Stage, y = Ogive, color=factor(Rating))) + geom_point() +
-  geom_smooth() +
-  scale_color_manual("Rating",
-                     labels = c("6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator"),
-                     values = c("6" = "orange", "7" = "green", "8" = "#008080")) +
-  scale_x_continuous(labels = joiner, limits = c(2,9), n.breaks = 9) +
+ggplot(comparison, aes(x = Stage, y = Ogive, color = factor(Rating))) +
+  geom_line() +
+  geom_point() +
+  labs(y = "Cumulative Stems") +
+  scale_color_manual("Rating", labels = joiner, values = wilber) +
+  scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
   scale_y_continuous(limits = c(0,stems)) +
-  theme_tufte() +
-  labs(y = "Cumulative Stems")
+  theme_tufte()
 ```
+
+## Conclusion
+
+* profiling
+* horizontal decalage
+* deliberate development
 
 ## Notes
 
