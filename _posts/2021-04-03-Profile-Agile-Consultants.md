@@ -8,7 +8,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "William C. Rowden"
-discussion_id: Profile-Agile-Consultans
+discussion_id: Profile-Agile-Consultants
 excerpt: How can we grow deeper in wisdom and understanding? Experience with an Agile consultant team might suggest some ways.
 layout: post
 mermaid: false
