@@ -52,27 +52,299 @@ I selected a team of Agile consultants from a what an owner described as a “bo
 
 This approach comes from a developmental perspective.[^7] It is inquiring whether the *espoused theory* of the value of feedback in Agile is part of the *theory-in-use* of the Agile consultant.[^8] They “talk the talk” but do they “walk the walk”?
 
-| Level      | The Concept of Feedback                                                                                                         |
-| :--------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| Operator   | React to feedback as an attack or threat.                                                                                       |
-| Conformer  | Receive feedback as disapproval, or as a reminder of norms.                                                                     |
-| Expert     | Take it personally, defend own position; dismiss feedback from those who are not seen as experts in the same field.             |
-| Achiever   | Accept feedback especially if it helps them to achieve their goals and to improve.                                              |
-| Catalyst   | Welcome feedback as necessary for self-knowledge and to uncover hidden aspects of their own behavior.                           |
-| Co-Creator | Invite feedback for self-actualization; conflict seen as inevitable aspect of viable and multiple relationships.                |
-| Synergist  | View feedback (loops) as a natural part of living systems; essential for learning and change; and take it with a grain of salt. |
+<table>
+
+<caption>
+
+Development and Feedback
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Level
+
+</th>
+
+<th style="text-align:left;">
+
+The Concept of Feedback
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Operator
+
+</td>
+
+<td style="text-align:left;">
+
+React to feedback as an attack or threat.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Conformer
+
+</td>
+
+<td style="text-align:left;">
+
+Receive feedback as disapproval, or as a reminder of norms.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Expert
+
+</td>
+
+<td style="text-align:left;">
+
+Take it personally, defend own position; dismiss feedback from those who are not seen as experts in the same field.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Achiever
+
+</td>
+
+<td style="text-align:left;">
+
+Accept feedback especially if it helps them to achieve their goals and to improve.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Catalyst
+
+</td>
+
+<td style="text-align:left;">
+
+Welcome feedback as necessary for self-knowledge and to uncover hidden aspects of their own behavior.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Co-Creator
+
+</td>
+
+<td style="text-align:left;">
+
+Invite feedback for self-actualization; conflict seen as inevitable aspect of viable and multiple relationships.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Synergist
+
+</td>
+
+<td style="text-align:left;">
+
+View feedback (loops) as a natural part of living systems; essential for learning and change; and take it with a grain of salt.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a [sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %}). In 2018 the 13 full-time members of the consultant team–a dozen Agile coaches and one Agile coordinator–took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within a half-stage the vast majority of the time.[^9]
 
-| Level      | Description                                                                                                                                                                                                                                                                                                                                           |
-| :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Operator   | Short time horizon, flouts power and sexuality, rejects feedback, hostile humor, deceptive, manipulative, externalizes blame, punishes, views luck as central, punishment rules, views rules as loss of freedom, ‘eye for an eye’ ethic.                                                                                                              |
-| Conformer  | Observes rules, avoids inner and outer conflict, conforms, suppresses own desires, loyalty to group, seeks membership, right versus wrong attitude, appearance/status conscious, tends towards clichés, works to group standard.                                                                                                                     |
-| Expert     | Interested in problem solving via data, critical of others and self, chooses efficiency over effectiveness, perfectionist, values decisions based on merit, wants own performance to stand out, aware of alternative constructions in problem resolution but can be dogmatic, accepts feedback only from ‘objective’ craft masters.                   |
-| Achiever   | Results and effectiveness oriented, long term goals, concerned with issues of ethics and justice, deliberately prioritizes work tasks, future inspires, drawn to learning, seeks mutuality in relations, aware of personal patterns of behavior, feels guilt if does not meet own standards, blind to own shadow, chases time.                        |
-| Catalyst   | Collaborative, tolerant of individual difference, aware of context and contingency, may challenge group norms, aware of owning a perspective, inquiring and open to feedback, seeks independent, creative work, attracted by difference and change, may become something of a maverick, focuses on present and historical context.                    |
-| Co-Creator | Process and goal oriented, strategic time horizon, systems conscious, enjoys a variety of roles, recognizes importance of principle and judgment, engaged in complex interweave of relationships, aware of own personal traits and shadow, high value on individuality, growth, self fulfilment, unique market niches, particular historical moments. |
-| Synergist  | Alert to the theatre of action, embraces common humanity, disturbs paradigms of thought and action, dispels notions of heroic action, deeply internalized sense of self-knowledge held with empty mind, sees light and dark, order and mess, treats time and events as symbolic, analogical, metaphorical (not merely linear, digital, literal).      |
+<table>
+
+<caption>
+
+The Seven Levels of Leadership
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Level
+
+</th>
+
+<th style="text-align:left;">
+
+Description
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Operator
+
+</td>
+
+<td style="text-align:left;">
+
+Short time horizon, flouts power and sexuality, rejects feedback, hostile humor, deceptive, manipulative, externalizes blame, punishes, views luck as central, punishment rules, views rules as loss of freedom, ‘eye for an eye’ ethic.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Conformer
+
+</td>
+
+<td style="text-align:left;">
+
+Observes rules, avoids inner and outer conflict, conforms, suppresses own desires, loyalty to group, seeks membership, right versus wrong attitude, appearance/status conscious, tends towards clichés, works to group standard.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Expert
+
+</td>
+
+<td style="text-align:left;">
+
+Interested in problem solving via data, critical of others and self, chooses efficiency over effectiveness, perfectionist, values decisions based on merit, wants own performance to stand out, aware of alternative constructions in problem resolution but can be dogmatic, accepts feedback only from ‘objective’ craft masters.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Achiever
+
+</td>
+
+<td style="text-align:left;">
+
+Results and effectiveness oriented, long term goals, concerned with issues of ethics and justice, deliberately prioritizes work tasks, future inspires, drawn to learning, seeks mutuality in relations, aware of personal patterns of behavior, feels guilt if does not meet own standards, blind to own shadow, chases time.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Catalyst
+
+</td>
+
+<td style="text-align:left;">
+
+Collaborative, tolerant of individual difference, aware of context and contingency, may challenge group norms, aware of owning a perspective, inquiring and open to feedback, seeks independent, creative work, attracted by difference and change, may become something of a maverick, focuses on present and historical context.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Co-Creator
+
+</td>
+
+<td style="text-align:left;">
+
+Process and goal oriented, strategic time horizon, systems conscious, enjoys a variety of roles, recognizes importance of principle and judgment, engaged in complex interweave of relationships, aware of own personal traits and shadow, high value on individuality, growth, self fulfilment, unique market niches, particular historical moments.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Synergist
+
+</td>
+
+<td style="text-align:left;">
+
+Alert to the theatre of action, embraces common humanity, disturbs paradigms of thought and action, dispels notions of heroic action, deeply internalized sense of self-knowledge held with empty mind, sees light and dark, order and mess, treats time and events as symbolic, analogical, metaphorical (not merely linear, digital, literal).
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 The profile ratings were the following:
 

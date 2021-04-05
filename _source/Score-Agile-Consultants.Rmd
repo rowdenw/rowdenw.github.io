@@ -8,7 +8,6 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
 author: "William C. Rowden"
-date: "2021-03-21"
 discussion_id: Score-Agile-Consultants
 excerpt: 
 layout: post

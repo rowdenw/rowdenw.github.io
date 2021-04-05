@@ -9,7 +9,6 @@ always_allow_html: true
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
 author: "William C. Rowden"
-date: "2021-03-21"
 discussion_id: Note-on-Names
 excerpt: 
 layout: post
@@ -36,14 +35,15 @@ knitr::opts_chunk$set(fig.path = fig_path,
                       cache = FALSE) # Change to TRUE for publication.
 ```
 
-```{r, echo=FALSE}
+```{r Name-Stages, echo=FALSE}
 stages_path <- file.path(base_dir, "_data", "Name-Stages.csv")
 stages_df <- read.csv(stages_path, stringsAsFactors = FALSE)
 stages_df %>%
   filter(E > 2) %>%
   pivot_wider(names_from = c(Version, Researcher), names_glue = "{Version} ({Researcher})",
               values_from = Name) %>%
-  kable(booktabs = TRUE) %>%
+  kable(booktabs = TRUE, caption = "Sample Title",
+        escape = TRUE, format = "html") %>%
   pack_rows(index = c("Preconventional" = 1, "Conventional" = 3, "Postconventional" = 3))
 ```
 

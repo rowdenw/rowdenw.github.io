@@ -104,7 +104,8 @@ results_mixed %>%
   select(Rating, Percentage) %>%
   inner_join(stages_df, by = c("Rating" = "E")) %>%
   select(Name, Percentage) %>%
-  kable(booktabs = TRUE, col.names = c("Level", description))
+  kable(booktabs = TRUE, caption = "Stage Distibution in Sample",
+        col.names = c("Level", description), escape = TRUE, format = "html")
 ```
 
 Studies like these suggest that the portion of adults with a complex worldview and an intergenerational perspective is small.

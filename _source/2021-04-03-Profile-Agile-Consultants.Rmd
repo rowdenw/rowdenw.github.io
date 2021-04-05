@@ -21,7 +21,6 @@ How can we grow deeper in wisdom and understanding, into `["post logical" thinki
 
 ```{r setup, include=FALSE}
 library(knitr)
-# library(kableExtra)
 library(tidyverse)
 library("ggthemes")
 
@@ -112,7 +111,8 @@ read.csv(feedback_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Cook-Greuter") %>%
   inner_join(stages_df, by = "E") %>%
   select(Name, Feedback) %>%
-  kable(booktabs = TRUE, col.names = c("Level", "The Concept of Feedback"))
+  kable(booktabs = TRUE, caption = "Development and Feedback",
+        col.names = c("Level", "The Concept of Feedback"), escape = TRUE, format = "html")
 ```
 
 In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a `[sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown}. In 2018 the 13 full-time members of the consultant team--a dozen Agile coaches and one Agile coordinator--took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within a half-stage the vast majority of the time.`[^9]`{=markdown}
@@ -123,7 +123,8 @@ read.csv(description_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Torbert") %>%
   inner_join(stages_df, by = "E") %>%
   select(Name, Description) %>%
-  kable(booktabs = TRUE, col.names = c("Level", "Description"))
+  kable(booktabs = TRUE, caption = "The Seven Levels of Leadership",
+        col.names = c("Level", "Description"), escape = TRUE, format = "html")
 ```
 
 The profile ratings were the following:

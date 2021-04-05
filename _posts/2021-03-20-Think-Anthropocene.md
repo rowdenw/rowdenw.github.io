@@ -73,15 +73,151 @@ Photo by [Benjamin Lim](https://scop.io/collections/vendors?q=Benjamin+Lim) on [
 
 If the deeper wisdom and understanding of later levels of development could help with thinking about climate change, how many people are able to take on the challenge? Susanne R. Cook-Greuter’s 1999 study of 4510 United States adults[^9] shows the thickness of the various layers[^5] in the “layer cake of society.”[^10]
 
-| Level      | N=4510 USA mixed adult population (%) |
-| :--------- | ------------------------------------: |
-| Operator   |                                   4.3 |
-| Conformer  |                                  11.3 |
-| Expert     |                                  36.5 |
-| Achiever   |                                  29.7 |
-| Catalyst   |                                  11.3 |
-| Co-Creator |                                   4.9 |
-| Synergist  |                                   1.5 |
+<table>
+
+<caption>
+
+Stage Distibution in Sample
+
+</caption>
+
+<thead>
+
+<tr>
+
+<th style="text-align:left;">
+
+Level
+
+</th>
+
+<th style="text-align:right;">
+
+N=4510 USA mixed adult population (%)
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td style="text-align:left;">
+
+Operator
+
+</td>
+
+<td style="text-align:right;">
+
+4.3
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Conformer
+
+</td>
+
+<td style="text-align:right;">
+
+11.3
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Expert
+
+</td>
+
+<td style="text-align:right;">
+
+36.5
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Achiever
+
+</td>
+
+<td style="text-align:right;">
+
+29.7
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Catalyst
+
+</td>
+
+<td style="text-align:right;">
+
+11.3
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Co-Creator
+
+</td>
+
+<td style="text-align:right;">
+
+4.9
+
+</td>
+
+</tr>
+
+<tr>
+
+<td style="text-align:left;">
+
+Synergist
+
+</td>
+
+<td style="text-align:right;">
+
+1.5
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Studies like these suggest that the portion of adults with a complex worldview and an intergenerational perspective is small.
 
