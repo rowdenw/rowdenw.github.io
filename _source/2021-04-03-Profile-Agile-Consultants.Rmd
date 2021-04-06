@@ -40,7 +40,7 @@ knitr::opts_chunk$set(fig.path = fig_path,
 
 Most people grow rapidly through `[development stages]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} into adolescence and then plateau in early adulthood (so that the correlation between age and stage is about 0.40 among adolescents and around 0.04 among adults, across studies involving more than 12,000 people).`[^1]`{=markdown} As a result, a 1999 mixed sample of 4510 adults in the United States--including accountants and artists, priests and prisoners, in ages ranging from 18 to 82 (with ages 35 to 65 most represented)--shows a mode (peak) at Expert, with fewer adults at an earlier or later stage.`[^2]`{=markdown}
 
-```{r Cook-Greuter-Samples, echo=FALSE}
+```{r Load-Data, echo=FALSE}
 results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
 samples_path <- file.path(base_dir, "_data", "Cook-Greuter-Samples.csv")
 stages_path <- file.path(base_dir, "_data", "Name-Stages.csv")
@@ -50,6 +50,11 @@ samples_df <- read.csv(samples_path, stringsAsFactors = FALSE) %>%
   mutate(Description = paste0("N=", .$Count, " ", .$Country, " ", .$Population))
 stages_df <- read.csv(stages_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Joiner", Version == "Level of Agility", E > 1, E < 10)
+
+joiner <- c("2" = "Enthusiast", "3" = "Operator", "4" = "Conformer", "5" = "Expert",
+            "6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator", "9" = "Synergist")
+wilber <- c("2" = "magenta", "3" = "red", "4" = "#FFBF00", "5" = "#FFBF00",
+            "6" = "orange", "7" = "green", "8" = "#008080", "9" = "turquoise")
 ```
 
 ```{r Cook-Greuter-Mixed-Adults, echo=FALSE}
@@ -57,10 +62,6 @@ results_mixed <- results_df %>% filter(Sample == 1)
 samples_mixed <- samples_df %>% filter(Sample == 1)
 
 description <- paste(samples_mixed$Description, "(%)")
-joiner <- c("2" = "Enthusiast", "3" = "Operator", "4" = "Conformer", "5" = "Expert",
-            "6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator", "9" = "Synergist")
-wilber <- c("2" = "magenta", "3" = "red", "4" = "#FFBF00", "5" = "#FFBF00",
-            "6" = "orange", "7" = "green", "8" = "#008080", "9" = "turquoise")
 
 ggplot(results_mixed, aes(x = Rating, y = Percentage)) + geom_point() +
   geom_line() +
