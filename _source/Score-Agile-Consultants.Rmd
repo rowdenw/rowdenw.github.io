@@ -35,7 +35,7 @@ knitr::opts_chunk$set(fig.path = fig_path,
                       cache = FALSE) # Change to TRUE for publication.
 ```
 
-```{r Early, echo=FALSE}
+```{r Load-Data, echo=FALSE}
 joiner <- c("2" = "Enthusiast", "3" = "Operator", "4" = "Conformer", "5" = "Expert",
             "6" = "Achiever", "7" = "Catalyst", "8" = "Co-Creator", "9" = "Synergist")
 wilber <- c("2" = "magenta", "3" = "red", "4" = "#FFBF00", "5" = "#FFBF00",
@@ -44,6 +44,7 @@ wilber <- c("2" = "magenta", "3" = "red", "4" = "#FFBF00", "5" = "#FFBF00",
 profile_path <- file.path(base_dir, "_data", "Source-GLP.csv")
 profile_df <- read.csv(profile_path, stringsAsFactors = FALSE)
 
+stems <- 30
 stems_path <- file.path(base_dir, "_data", "Score-GLP.csv")
 stems_df <- read.csv(stems_path, stringsAsFactors = FALSE)
 
@@ -59,13 +60,52 @@ team_stems <- stems_df  %>%
   mutate(Description = paste("Team Member", Member)) %>%
   group_by(Member) %>%
   mutate(Ogive = cumsum((Stems)))
-stems <- 30
+```
+
+How does development happen? To picture the process we can look at individuals rather than a population, using a longitudinal rather than cross-sectional approach.
+
+For the sentence completion "test" (psychometric profile), an individual completes some number of sentence stems:
+
+* 36 for the Washington University Sentence Completion Test (18 for the short form),`[^a]`{=markdown}
+* 32 for the Leadership Development Profile,`[^b]`{=markdown}
+* 36 for the Mature Adult Profile,`[^c]`{=markdown} and
+* 30 for the [Global Leadership Profile](https://www.gla.global/the-glp-overview/).`[^d]`{=markdown}
+
+These sentence stems are on topics like emotions, feedback, gender, leadership, power, relationships, space, time, work, etc.`[^f]`{=markdown} The scorer assigns each response (sentence completion) a stage, and then the entire profile a rating. The responses always span at least three levels, often four or five.`[^e]`{=markdown} For example, `[one Agile consultant team member]({% post_url 2021-04-03-Profile-Agile-Consultants %})`{=markdown}, "Team Member 1," gave 6 Conformer responses, 11 Expert responses, 11 Achiever responses, 1 Catalyst response, and 1 Co-Creator response.
+
+```{r Early-Stems, echo=FALSE}
+early <- team_stems %>% filter(Member == 1)
+ggplot(early) + 
+  geom_col(aes(x = Stage, y = Stems, fill = factor(Stage))) +
+  labs(y = "Stems", title = early$Description) +
+  scale_fill_manual("Stage", values = wilber) +
+  scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
+  scale_y_continuous(limits = c(0,stems)) +
+  theme_tufte() +
+  theme(legend.position = "none")
+```
+
+This span of responses illustrates some aspects of human development:
+
+* the perspective of earlier stages remains available as one shifts to later stages,
+* different topics may elicit responses from different stages, and
+* the responses are signs pointing to development, signs might be interpreted differently after further questioning.
+
+Consequently the question for the overall rating becomes this: What's the latest stage for which there are enough responses to suggest that stage is the individual's center of gravity? The rating compares the results of various estimation methods:`[^a]`{=markdown}
+
+* the scorer's impression,
+* a total weighted score, and
+* a total protocol rating.
+
+The total protocol rating uses a set of scoring rules based upon a cumulative frequency distribution, or [ogive](https://en.wikipedia.org/wiki/Ogive_(statistics)). Team Member 1, for example, profiled at Achiever.
+
+```{r Early-Ogive, echo=FALSE}
 early <- team_stems %>% filter(Member == 1)
 ggplot(early) + 
   geom_col(aes(x = Stage, y = Stems, fill = factor(Stage))) +
   geom_line(aes(x = Stage, y = Ogive, color = factor(Rating))) +
   geom_point(aes(x = Stage, y = Ogive, color = factor(Rating))) +
-  labs(y = "Cumulative Stems", title = early$Description) +
+  labs(y = "Stems", title = early$Description) +
   scale_color_manual("Rating", values = wilber) +
   scale_fill_manual("Stage", values = wilber) +
   scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
@@ -74,14 +114,14 @@ ggplot(early) +
   theme(legend.position = "none")
 ```
 
-```{r Late, echo=FALSE}
+```{r Late-Ogive, echo=FALSE}
 member_max <- team[which.max(team$Member), "Member"]
 late <- team_stems %>% filter(Member == member_max)
 ggplot(late) +
   geom_col(aes(x = Stage, y = Stems, fill = factor(Stage))) +
   geom_line(aes(x = Stage, y = Ogive, color = factor(Rating))) +
   geom_point(aes(x = Stage, y = Ogive, color = factor(Rating))) +
-  labs(y = "Cumulative Stems", title = late$Description) +
+  labs(y = "Stems", title = late$Description) +
   scale_color_manual("Rating", values = wilber) +
   scale_fill_manual("Stage", values = wilber) +
   scale_x_continuous(breaks = 2:9, labels = joiner, limits = c(2,10)) +
@@ -90,7 +130,7 @@ ggplot(late) +
   theme(legend.position = "none")
 ```
 
-```{r Early+Late, echo=FALSE}
+```{r Early+Late-Ogive, echo=FALSE}
 early_late <- team_stems %>% filter(Member %in% c(1, member_max))
 ggplot(early_late, aes(x = Stage, y = Ogive, color = factor(Rating))) +
   geom_line() +
@@ -146,3 +186,9 @@ ggplot(comparison, aes(x = Stage, y = Ogive, color = factor(Rating))) +
 
 ## Notes
 
+`[^a]`{=markdown}: Hy, L.X.; Loevinger, J. (1996) _Measuring Ego Development_; 2nd edition.; Psychology Press, 2014; [ISBN 978-0-8058-2060-7](https://isbn.nu/9780805820607).
+`[^b]`{=markdown}: Harthill (1998) The Leadership Development Framework Sentence Completion Form.
+`[^c]`{=markdown}: Cook-Greuter, S. (2020) [Comparison between the S/O Interview and the MAP Sentence Completion Test](https://growthedge.net/site/uploads/topics/45697/2020-12-SO-and-MAP-comparison-table.pdf).
+`[^d]`{=markdown}: Herdman Barker, E.; Wallis, N.C.; Izard, R.; Torbert, W.R. (2017) _CDAI GLP Certification_.
+`[^e]`{=markdown}: Cook-Greuter, S.R. (2013) [Nine Levels Of Increasing Embrace In Ego Development: A Full-Spectrum Theory Of Vertical Growth And Meaning Making](http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf). *Prepublication version*, 97.
+`[^f]`{=markdown}: Global Leadership Associates (2019) _GLA Advanced Practitioner Event_; The Lensbury Club.
