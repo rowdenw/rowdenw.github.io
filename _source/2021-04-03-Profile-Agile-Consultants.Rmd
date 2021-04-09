@@ -41,8 +41,8 @@ knitr::opts_chunk$set(fig.path = fig_path,
 Most people grow rapidly through `[development stages]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} into adolescence and then plateau in early adulthood (so that the correlation between age and stage is about 0.40 among adolescents and around 0.04 among adults, across studies involving more than 12,000 people).`[^1]`{=markdown} As a result, a 1999 mixed sample of 4510 adults in the United States--including accountants and artists, priests and prisoners, in ages ranging from 18 to 82 (with ages 35 to 65 most represented)--shows a mode (peak) at Expert, with fewer adults at an earlier or later stage.`[^2]`{=markdown}
 
 ```{r Load-Data, echo=FALSE}
-results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
-samples_path <- file.path(base_dir, "_data", "Cook-Greuter-Samples.csv")
+results_path <- file.path(base_dir, "_data", "Results.csv")
+samples_path <- file.path(base_dir, "_data", "Samples.csv")
 stages_path <- file.path(base_dir, "_data", "Name-Stages.csv")
 
 results_df <- read.csv(results_path, stringsAsFactors = FALSE)

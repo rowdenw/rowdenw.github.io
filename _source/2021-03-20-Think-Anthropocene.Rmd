@@ -86,8 +86,8 @@ Photo by  [Benjamin Lim](https://scop.io/collections/vendors?q=Benjamin+Lim) on 
 If the deeper wisdom and understanding of later levels of development could help with thinking about climate change, how many people are able to take on the challenge? Susanne R. Cook-Greuter's 1999 study of 4510 United States adults`[^9]`{=markdown} shows the thickness of the various layers`[^5]`{=markdown} in the "layer cake of society."`[^10]`{=markdown}
 
 ```{r Cook-Greuter-Mixed-Adults, echo=FALSE}
-results_path <- file.path(base_dir, "_data", "Cook-Greuter-Results.csv")
-samples_path <- file.path(base_dir, "_data", "Cook-Greuter-Samples.csv")
+results_path <- file.path(base_dir, "_data", "Results.csv")
+samples_path <- file.path(base_dir, "_data", "Samples.csv")
 stages_path  <- file.path(base_dir, "_data", "Name-Stages.csv")
 
 results_df <- read.csv(results_path, stringsAsFactors = FALSE)
