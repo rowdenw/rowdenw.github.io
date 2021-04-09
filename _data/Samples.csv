@@ -1,7 +1,5 @@
-Sample,Count,Country,Start,End,Population
-1,4510,USA,1999,1999,mixed adult population
-2,497,USA,,,managers & supervisors
-3,535,UK,,,managers & consultants
-4,3397,international,2000,2007,self-selected
-,,,,,
-,,,,,
+Sample,Author,Date,Count,Country,Start,End,Population
+1,Cook-Greuter,2013,4510,USA,1999,1999,mixed adult population
+2,Cook-Greuter,2013,497,USA,,,managers & supervisors
+3,Cook-Greuter,2013,535,UK,,,managers & consultants
+4,Cook-Greuter,2013,3397,international,2000,2007,self-selected
