@@ -198,7 +198,7 @@ View feedback (loops) as a natural part of living systems; essential for learnin
 
 </table>
 
-In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a [sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %}). In 2018 the 13 full-time members of the consultant team–a dozen Agile coaches and one Agile coordinator–took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within a half-stage the vast majority of the time.[^9]
+In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a [sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %}). In 2018 the 13 full-time members of the consultant team–a dozen Agile coaches and one Agile coordinator–took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within one-third stage the vast majority of the time.[^9]
 
 <table>
 
@@ -374,4 +374,4 @@ My intent in interviewing, selecting, profiling, and providing feedback to Agile
 [^6]: Moen, R.D.; Norman, C.L. (2010) [Circling Back](http://www.apiweb.org/circling-back.pdf). *Quality Progress* *43*, 22–28.
 [^7]: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. *Industrial and Commercial Training* *36*, 275–281, doi [10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
 [^8]: Argyris, C.; Schon, D.A. (1974) *Theory in Practice: Increasing Professional Effectiveness*; 1st edition.; Jossey-Bass Publishers: San Francisco; [ISBN 978-0-87589-230-6](https://isbn.nu/9780875892306).
-[^9]: Including my profile, my estimate matched the profile four times, was mismatched by 0.5 stage five times, was mismatched by 1 stage one time, was mismatched by 1.5 stages two times, and was mismatched by 2 stages one time.
+[^9]: Including my profile, my estimate matched the profile four times, was mismatched by one-third stage five times, was mismatched by 1 stage one time, was mismatched by 4/3 stages two times, and was mismatched by 2 stages one time.
