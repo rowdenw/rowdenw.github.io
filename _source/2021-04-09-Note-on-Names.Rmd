@@ -49,14 +49,23 @@ stages_df <- read.csv(stages_path, stringsAsFactors = FALSE)
 stages_df %>%
   mutate(Version = fct_relevel(Version, "Level of Agility", "Action-Logic",
                                "Leadership Maturity", "Ego Development Stage")) %>%
-  arrange(Version) %>%
+  arrange(Version, Researcher, E) %>%
   filter(E > 1) %>%
   pivot_wider(names_from = c(Version, Researcher),
               names_glue = "<pre>{Version}\n({Researcher})</pre>",
               values_from = Name) %>%
   kable(booktabs = TRUE, caption = "Cross-Reference Stage Names",
         escape = FALSE, format = "html") %>%
-  pack_rows(index = c("Preconventional" = 2, "Conventional" = 3, "Postconventional" = 3))
+  pack_rows(index = c("Preconventional" = 2, "Conventional" = 3, "Postconventional" = 3)) %>%
+  row_spec(1, background = "magenta") %>%
+  row_spec(2, background = "red") %>%
+  row_spec(3:4, background = "#FFBF00") %>%
+  row_spec(5, background = "orange") %>%
+  row_spec(6, background = "green") %>%
+  row_spec(7, background = "#008080") %>%
+  row_spec(8, background = "turquoise") %>%
+  footnote(escape = FALSE,
+           general = "E-levels are from Hy, L.X.; Loevinger, J. (1996) <em>Measuring Ego Development</em>; 2nd edition.; Psychology Press.")
 ```
 
 Susanne Cook-Greuter's stages of Leadership Maturity`[^6]`{=markdown} provide names for each stage that describe their center or view of self. Her earlier Ego Development Stage names were closer to `[Loevinger's labels]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown}.`[^7]`{=markdown}
