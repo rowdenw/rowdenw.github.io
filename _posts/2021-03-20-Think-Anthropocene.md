@@ -5,6 +5,7 @@ output:
     preserve_yaml: TRUE
     pandoc_args:
       - "--wrap=preserve"
+always_allow_html: true
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 discussion_id: Think-Anthropocene
@@ -107,13 +108,13 @@ N=4510 USA mixed adult population (%)
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: red !important;">
 
 Operator
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: red !important;">
 
 4.3
 
@@ -123,13 +124,13 @@ Operator
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Conformer
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: #FFBF00 !important;">
 
 11.3
 
@@ -139,13 +140,13 @@ Conformer
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Expert
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: #FFBF00 !important;">
 
 36.5
 
@@ -155,13 +156,13 @@ Expert
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: orange !important;">
 
 Achiever
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: orange !important;">
 
 29.7
 
@@ -171,13 +172,13 @@ Achiever
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: green !important;">
 
 Catalyst
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: green !important;">
 
 11.3
 
@@ -187,13 +188,13 @@ Catalyst
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #008080 !important;">
 
 Co-Creator
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: #008080 !important;">
 
 4.9
 
@@ -203,13 +204,13 @@ Co-Creator
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: turquoise !important;">
 
 Synergist
 
 </td>
 
-<td style="text-align:right;">
+<td style="text-align:right;background-color: turquoise !important;">
 
 1.5
 

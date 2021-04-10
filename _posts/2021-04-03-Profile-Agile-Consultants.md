@@ -5,6 +5,7 @@ output:
     preserve_yaml: TRUE
     pandoc_args:
       - "--wrap=preserve"
+always_allow_html: true
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "William C. Rowden"
@@ -84,13 +85,13 @@ The Concept of Feedback
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: red !important;">
 
 Operator
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: red !important;">
 
 React to feedback as an attack or threat.
 
@@ -100,13 +101,13 @@ React to feedback as an attack or threat.
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Conformer
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Receive feedback as disapproval, or as a reminder of norms.
 
@@ -116,13 +117,13 @@ Receive feedback as disapproval, or as a reminder of norms.
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Expert
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Take it personally, defend own position; dismiss feedback from those who are not seen as experts in the same field.
 
@@ -132,13 +133,13 @@ Take it personally, defend own position; dismiss feedback from those who are not
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: orange !important;">
 
 Achiever
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: orange !important;">
 
 Accept feedback especially if it helps them to achieve their goals and to improve.
 
@@ -148,13 +149,13 @@ Accept feedback especially if it helps them to achieve their goals and to improv
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: green !important;">
 
 Catalyst
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: green !important;">
 
 Welcome feedback as necessary for self-knowledge and to uncover hidden aspects of their own behavior.
 
@@ -164,13 +165,13 @@ Welcome feedback as necessary for self-knowledge and to uncover hidden aspects o
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #008080 !important;">
 
 Co-Creator
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #008080 !important;">
 
 Invite feedback for self-actualization; conflict seen as inevitable aspect of viable and multiple relationships.
 
@@ -180,13 +181,13 @@ Invite feedback for self-actualization; conflict seen as inevitable aspect of vi
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: turquoise !important;">
 
 Synergist
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: turquoise !important;">
 
 View feedback (loops) as a natural part of living systems; essential for learning and change; and take it with a grain of salt.
 
@@ -232,13 +233,13 @@ Description
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: red !important;">
 
 Operator
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: red !important;">
 
 Short time horizon, flouts power and sexuality, rejects feedback, hostile humor, deceptive, manipulative, externalizes blame, punishes, views luck as central, punishment rules, views rules as loss of freedom, ‘eye for an eye’ ethic.
 
@@ -248,13 +249,13 @@ Short time horizon, flouts power and sexuality, rejects feedback, hostile humor,
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Conformer
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Observes rules, avoids inner and outer conflict, conforms, suppresses own desires, loyalty to group, seeks membership, right versus wrong attitude, appearance/status conscious, tends towards clichés, works to group standard.
 
@@ -264,13 +265,13 @@ Observes rules, avoids inner and outer conflict, conforms, suppresses own desire
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Expert
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #FFBF00 !important;">
 
 Interested in problem solving via data, critical of others and self, chooses efficiency over effectiveness, perfectionist, values decisions based on merit, wants own performance to stand out, aware of alternative constructions in problem resolution but can be dogmatic, accepts feedback only from ‘objective’ craft masters.
 
@@ -280,13 +281,13 @@ Interested in problem solving via data, critical of others and self, chooses eff
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: orange !important;">
 
 Achiever
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: orange !important;">
 
 Results and effectiveness oriented, long term goals, concerned with issues of ethics and justice, deliberately prioritizes work tasks, future inspires, drawn to learning, seeks mutuality in relations, aware of personal patterns of behavior, feels guilt if does not meet own standards, blind to own shadow, chases time.
 
@@ -296,13 +297,13 @@ Results and effectiveness oriented, long term goals, concerned with issues of et
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: green !important;">
 
 Catalyst
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: green !important;">
 
 Collaborative, tolerant of individual difference, aware of context and contingency, may challenge group norms, aware of owning a perspective, inquiring and open to feedback, seeks independent, creative work, attracted by difference and change, may become something of a maverick, focuses on present and historical context.
 
@@ -312,13 +313,13 @@ Collaborative, tolerant of individual difference, aware of context and contingen
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #008080 !important;">
 
 Co-Creator
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: #008080 !important;">
 
 Process and goal oriented, strategic time horizon, systems conscious, enjoys a variety of roles, recognizes importance of principle and judgment, engaged in complex interweave of relationships, aware of own personal traits and shadow, high value on individuality, growth, self fulfilment, unique market niches, particular historical moments.
 
@@ -328,13 +329,13 @@ Process and goal oriented, strategic time horizon, systems conscious, enjoys a v
 
 <tr>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: turquoise !important;">
 
 Synergist
 
 </td>
 
-<td style="text-align:left;">
+<td style="text-align:left;background-color: turquoise !important;">
 
 Alert to the theatre of action, embraces common humanity, disturbs paradigms of thought and action, dispels notions of heroic action, deeply internalized sense of self-knowledge held with empty mind, sees light and dark, order and mess, treats time and events as symbolic, analogical, metaphorical (not merely linear, digital, literal).
 

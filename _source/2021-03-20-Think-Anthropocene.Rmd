@@ -5,6 +5,7 @@ output:
     preserve_yaml: TRUE
     pandoc_args:
       - "--wrap=preserve"
+always_allow_html: true
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 discussion_id: Think-Anthropocene
@@ -18,6 +19,7 @@ title: Think About the Anthropocene
 ---
 
 ```{r setup, include=FALSE}
+library(kableExtra)
 library(knitr)
 library(tidyverse)
 
@@ -106,9 +108,16 @@ description <- paste(samples_mixed$Description, "(%)")
 results_mixed %>% 
   select(Rating, Percentage) %>%
   inner_join(stages_df, by = c("Rating" = "E")) %>%
+  filter(Rating > 2, Rating < 10) %>%
   select(Name, Percentage) %>%
   kable(booktabs = TRUE, caption = "Stage Distibution in Sample",
-        col.names = c("Level", description), escape = TRUE, format = "html")
+        col.names = c("Level", description), escape = TRUE, format = "html") %>%
+  row_spec(1, background = "red") %>%
+  row_spec(2:3, background = "#FFBF00") %>%
+  row_spec(4, background = "orange") %>%
+  row_spec(5, background = "green") %>%
+  row_spec(6, background = "#008080") %>%
+  row_spec(7, background = "turquoise")
 ```
 
 Studies like these suggest that the portion of adults with a complex worldview and an intergenerational perspective is small.

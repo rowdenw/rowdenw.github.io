@@ -5,6 +5,7 @@ output:
     preserve_yaml: TRUE
     pandoc_args:
       - "--wrap=preserve"
+always_allow_html: true
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "William C. Rowden"
@@ -112,9 +113,16 @@ feedback_path <- file.path(base_dir, "_data", "Feedback.csv")
 read.csv(feedback_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Cook-Greuter") %>%
   inner_join(stages_df, by = "E") %>%
+  filter(E > 2, E < 10) %>%
   select(Name, Feedback) %>%
   kable(booktabs = TRUE, caption = "Development and Feedback",
-        col.names = c("Level", "The Concept of Feedback"), escape = TRUE, format = "html")
+        col.names = c("Level", "The Concept of Feedback"), escape = TRUE, format = "html") %>%
+  row_spec(1, background = "red") %>%
+  row_spec(2:3, background = "#FFBF00") %>%
+  row_spec(4, background = "orange") %>%
+  row_spec(5, background = "green") %>%
+  row_spec(6, background = "#008080") %>%
+  row_spec(7, background = "turquoise")
 ```
 
 In 2017 I took the [Global Leadership Profile (GLP)](https://www.gla.global/the-glp-overview/), a `[sentence completion profile]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown}. In 2018 the 13 full-time members of the consultant team--a dozen Agile coaches and one Agile coordinator--took the GLP as well. I debriefed the GLP for each member of the consultant team after estimating the rating using descriptions from [The Seven Levels of Leadership Development and Their Impact](https://www.gla.global/the-glp/levels-of-leadership-development/). My estimate matched the profile rating within one-third stage the vast majority of the time.`[^9]`{=markdown}
@@ -124,9 +132,16 @@ description_path <- file.path(base_dir, "_data", "Description.csv")
 read.csv(description_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Torbert") %>%
   inner_join(stages_df, by = "E") %>%
+  filter(E > 2, E < 10) %>%
   select(Name, Description) %>%
   kable(booktabs = TRUE, caption = "The Seven Levels of Leadership",
-        col.names = c("Level", "Description"), escape = TRUE, format = "html")
+        col.names = c("Level", "Description"), escape = TRUE, format = "html") %>%
+  row_spec(1, background = "red") %>%
+  row_spec(2:3, background = "#FFBF00") %>%
+  row_spec(4, background = "orange") %>%
+  row_spec(5, background = "green") %>%
+  row_spec(6, background = "#008080") %>%
+  row_spec(7, background = "turquoise")
 ```
 
 The profile ratings were the following:
