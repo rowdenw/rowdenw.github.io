@@ -8,7 +8,7 @@ output:
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 discussion_id: Think-Anthropocene
-excerpt: The pressures we exert on the planet have become so great that scientists are considering whether the Earth has entered an entirely new geological epoch, the Anthropocene, or the age of humans. It means that we are the first people to live in an age defined by human choice, in which the dominant risk to our survival is ourselves.
+excerpt: The pressures we exert on the planet have become so great that scientists are considering whether the Earth has entered an entirely new geological epoch, the Anthropocene, or the age of humans. Perhaps the biggest problem facing humanity is climate change. How many people are able to take on the challenge of thinking about this?
 layout: post
 mermaid: true
 tags:
@@ -19,11 +19,13 @@ title: Think About the Anthropocene
 
 > In fact, the pressures we exert on the planet have become so great that scientists are considering whether the Earth has entered an entirely new geological epoch: the Anthropocene, or the age of humans. It means that we are the first people to live in an age defined by human choice, in which the dominant risk to our survival is ourselves.[^1]
 
-The dominant risk to the survival of humanity–and possibly any [galactic intelligent life--is self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). One example of the [major problems in the world]({% post_url 2021-03-14-Grown-Up-Thinking %}), perhaps “[the biggest problem facing humanity and our species as a whole](https://youtu.be/29ciz1TEXjI?t=166)” is climate change. Some of the challenges of thinking about climate change is that it’s “[wildly complex](https://youtu.be/9Pqp_8XLC6c?t=178),” with a [vast span in space and time](https://youtu.be/9Pqp_8XLC6c?t=255). The time span leads many Americans think of climate change as a [distant problem](https://youtu.be/DkZ7BJQupVA?t=90)–distant in time because the impacts won’t be felt for a generation or more. These challenges, of complexity and time span, are related to how we think. How many people are able to take on the challenge of climate change?
+The dominant risk to the survival of humanity–and possibly any [galactic intelligent life--is self-annihilation]({% post_url 2021-01-26-Estimate-Galactic-ETI %}). One example of the [major problems in the world]({% post_url 2021-03-14-Grown-Up-Thinking %}), perhaps “[the biggest problem facing humanity and our species as a whole](https://youtu.be/29ciz1TEXjI?t=166),” is climate change.
+
+The challenge of thinking about climate change is that it’s “[wildly complex](https://youtu.be/9Pqp_8XLC6c?t=178),” with a [vast span in space and time](https://youtu.be/9Pqp_8XLC6c?t=255). The time span leads many Americans think of climate change as a [distant problem](https://youtu.be/DkZ7BJQupVA?t=90)–distant in time because the impacts won’t be felt for a generation or more. These challenges, of complexity and time span, are related to how we think. How many people are able to take on the challenge of thinking about climate change?
 
 ## Complexity
 
-The [overview to *The Next Frontier: Human Development and the Anthropocene*](http://hdr.undp.org/sites/default/files/hdr_2020_overview_english.pdf) mentions in various places the characteristics of impacts of innovation and technology on socio-economic systems:
+Innovation and technology impact socio-economic systems. The [overview to *The Next Frontier: Human Development and the Anthropocene*](http://hdr.undp.org/sites/default/files/hdr_2020_overview_english.pdf), a Human Development Report, mentions in various places the characteristics of these impacts:
 
   - complex,
   - dynamic,
@@ -32,9 +34,9 @@ The [overview to *The Next Frontier: Human Development and the Anthropocene*](ht
   - multidimensional, and
   - non-linear.
 
-Approaching the impacts as independent and isolated problems, solved by nation-states without shared [institutional decision-making](https://80000hours.org/problem-profiles/improving-institutional-decision-making/), can lead to dangerous unintended consequences.[^2]
+Approaching technological impacts as independent and isolated problems, solved by nation-states without shared [institutional decision-making](https://80000hours.org/problem-profiles/improving-institutional-decision-making/), can lead to dangerous unintended consequences.[^2]
 
-The systems and complexity thinking in this report is the kind of thinking that comes with later [adult development]({% post_url 2021-03-07-What-Is-Growing-Up %}) and requires a [shifts in thinking]({% post_url 2021-03-14-Grown-Up-Thinking %}). As we grow through the stages of adult development, we think in more complex, systemic, strategic, and interdependent ways.[^3]
+The systems and complexity thinking in this Human Development Report is the kind of thinking that comes with later [adult development]({% post_url 2021-03-07-What-Is-Growing-Up %}) and requires a [shifts in thinking]({% post_url 2021-03-14-Grown-Up-Thinking %}). As we grow through the stages of adult development, we think in more complex, systemic, strategic, and interdependent ways.[^3]
 
 <div class="mermaid">
 graph LR;
@@ -51,9 +53,9 @@ one-dimenstional --> multidimensional;
 
 As we develop as adults, we also think differently about time. Along with increasing wisdom comes increasing foresight and ability to act in the moment.
 
-The easiest change to see is the time spans that preoccupy our conscious thoughts. These time spans impacts our work, beginning with the interview question “Where do you see yourself in 5 years?” In fact, the level of responsibility of an organizational role can be measured in terms of the target completion time of the longest task, project, or program assigned to that role.[^4]
+The easiest change to see is the time spans that preoccupy our conscious thoughts. These time spans affect our work life, beginning with the interview question “Where do you see yourself in 5 years?” In fact, the level of responsibility of an organizational role can be measured in terms of the target completion time of the longest task, project, or program assigned to that role.[^4]
 
-Our relationship to time changes in other ways as well. Responses to leadership or mature adult profiles show shifts from the routine to the strategic, from the literal to the symbolic.
+As we mature, our relationship to time changes in other ways as well. Responses to mature adult or leadership profiles show shifts from the routine to the strategic, from the literal to the symbolic.
 
 | Level[^5]  | Time Span[^6]      | Relationship to Time                                                                                                        |
 | ---------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
