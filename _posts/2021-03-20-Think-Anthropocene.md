@@ -46,7 +46,7 @@ simple --> complicated --> complex;
 static --> dynamic;
 separate --> interconnected;
 dependent --> independent --> interdependent;
-one-dimenstional --> multidimensional;
+one-dimensional --> multidimensional;
 </div>
 
 ## Time Span

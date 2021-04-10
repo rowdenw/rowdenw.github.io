@@ -58,7 +58,7 @@ The systems and complexity thinking in this Human Development Report is the kind
 `	static --> dynamic;`{=html}
 `	separate --> interconnected;`{=html}
 `	dependent --> independent --> interdependent;`{=html}
-`	one-dimenstional --> multidimensional;`{=html}
+`	one-dimensional --> multidimensional;`{=html}
 `</div>`{=html}
 
 ## Time Span
