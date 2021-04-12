@@ -20,6 +20,10 @@ title: Profile Agile Consultants
 
 How can we grow deeper in wisdom and understanding, into ["post logical" thinking]({% post_url 2021-03-14-Grown-Up-Thinking %})? Experience with an Agile consultant team might suggest some ways.
 
+![growth word on black thinking bubble](/images/growth_word_on_black_thinking_bubble-scopio-b171f410-dbe7-4437-8ab7-a8c8bfb76c5c.jpeg){:class=“img-responsive”}
+
+Photo by [Constantin Stanciu](https://scop.io/collections/vendors?q=Constantin+Stanciu) on [Scopio](https://scop.io/)
+
 ## Mixed Adult Population
 
 Most people grow rapidly through [development stages]({% post_url 2021-03-07-What-Is-Growing-Up %}) into adolescence and then plateau in early adulthood (so that the correlation between age and stage is about 0.40 among adolescents and around 0.04 among adults, across studies involving more than 12,000 people).[^1] As a result, a 1999 mixed sample of 4510 adults in the United States–including accountants and artists, priests and prisoners, in ages ranging from 18 to 82 (with ages 35 to 65 most represented)–shows a mode (peak) at Expert, with fewer adults at an earlier or later stage.[^2]

@@ -71,6 +71,10 @@ The [Agile consulting team]({% post_url 2021-04-03-Profile-Agile-Consultants %})
   - follow-up feedback, and
   - shared leadership.
 
+![individual development plan written on small tiny paper held by a person](/images/individual_development_plan_written_on_small_tiny_paper_held_by_a_person-scopio-e496ce42-e5b4-4324-b62f-c77aa8d06b8e.jpeg){:class=“img-responsive”}
+
+Photo by [Constantin Stanciu](https://scop.io/collections/vendors?q=Constantin+Stanciu) on [Scopio](https://scop.io/)
+
 ### Growing Edge
 
 In addition to providing feedback during the interview and noting whether or not the interviewee integrated feedback, the interview included questions intended to identify a “growing edge” for the consultant that could add to the client work the team was doing: “What is most important for you to get better at, for this \[client\] engagement to be successful?”[^10]
