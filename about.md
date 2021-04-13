@@ -5,6 +5,10 @@ title: About
 permalink: /about/
 ---
 
+> [He] had true insight into your nature when he said that you were a philosopher, for wonder is the feeling of a philosopher, and philosophy begins in wonder....
+
+~ Plato[^1]
+
 ## William
 
 During the workday I coach and consult to enterprise transformation leaders, fostering teams, and mentoring and developing coaches. I am certified to debrief the [Leadership Circle Profile](https://leadershipcircle.com/en/products/leadership-circle-profile/), an [advanced practitioner](https://www.gla.global/about/certified-global-leadership-coaches/certified-coaches-in-the-us-and-canada/) of the [Global Leadership Profile](https://www.gla.global/the-glp-overview/), and [trained to facilitate Immunity to Change workshops](https://mindsatwork.com/programs-services/coach-development/facilitators-workshop/). More details are in my [online CV]({% link cv.html %}).
@@ -45,3 +49,6 @@ Those with whom I have debriefed the Global Leadership profile have provided thi
 
 > I like the requirement to think about my goals and impact--and how to get there.
 
+## Notes
+
+[^1]: Plato _[The Dialogues of Plato](https://www.google.com/books/edition/The_Dialogues_of_Plato/4kQNAAAAIAAJ?hl=en&gbpv=1&kptab=overview)_; Clarendon Press, 1871; Vol. 3.
