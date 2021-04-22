@@ -19,7 +19,6 @@ title: Comment on Agile Consultants
 
 ```{r setup, include=FALSE}
 library(knitr)
-# library(kableExtra)
 library(tidyverse)
 library("ggthemes")
 
