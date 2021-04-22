@@ -1,7 +1,7 @@
-E,Paradigm    
-3,Impulsive   
-4,Conformist  
-5,Conformist  
-6,Achievement 
-7,Pluralistic 
-8,Evolutionary
+E,Paradigm    ,Color
+3,Impulsive   ,Red
+4,Conformist  ,Amber
+5,Conformist  ,Amber
+6,Achievement ,Orange
+7,Pluralistic ,Green
+8,Evolutionary,Teal

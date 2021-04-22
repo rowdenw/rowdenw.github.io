@@ -59,9 +59,9 @@ Of thousands of professionals, only the most developed 15% of managers show the 
 
 Frederic Laloux hypothesizes that the leader level shapes organizational culture:
 
-> What determines which stage an organization operates from? It is the stage through which its leadership tends to look at the world. Consciously or unconsciously, leaders put in place organizational structures, practices, and cultures that make sense to them, that correspond to their way of dealing with the world. This means that an organization cannot evolve beyond its leadership’s stage of development.[^b]
+> What determines which stage an organization operates from? It is the stage through which its leadership tends to look at the world. Consciously or unconsciously, leaders put in place organizational structures, practices, and cultures that make sense to them, that correspond to their way of dealing with the world. This means that an organization cannot evolve beyond its leadership’s stage of development.
 
-Specifically, organizations created by different leaders operate on different paradigms.
+Specifically, organizations created by different leaders operate on different paradigms. For these paradigms, Laloux uses the color system from Integral Theory.[^b]
 
 ```{r Level+Paradigm, echo=FALSE}
 paradigms_path <- file.path(base_dir, "_data", "Paradigms.csv")
@@ -72,9 +72,10 @@ stages_df <- read.csv(stages_path, stringsAsFactors = FALSE) %>%
   filter(Researcher == "Joiner", Version == "Level of Agility", E > 1, E < 10)
 paradigms_df %>%
   inner_join(stages_df) %>%
-  select(Name, Paradigm) %>%
-  kable(booktabs = TRUE, caption = "Leader and Culture",
-        col.names = c("Level", "Paradigm"), escape = TRUE, format = "html") %>%
+  select(Name, Paradigm, Color) %>%
+  kable(booktabs = TRUE, caption = "Leadership and Culture",
+        col.names = c("Leader Level", "Paradigm", "Color"), escape = TRUE,
+        format = "html") %>%
   row_spec(1, background = "red") %>%
   row_spec(2:3, background = "#FFBF00") %>%
   row_spec(4, background = "orange") %>%
@@ -82,6 +83,26 @@ paradigms_df %>%
   row_spec(6, background = "#008080")
 ```
 
+Laloux provides guiding metaphors, values, key breakthroughs, and example organizations for each of these paradigms.
+
+```{r Clues, echo=FALSE}
+colors_df <- paradigms_df %>%
+  distinct(Paradigm, Color)
+cultures_path <- file.path(base_dir, "_data", "Cultures.csv")
+cultures_df <- read.csv(cultures_path, stringsAsFactors = FALSE)
+cultures_df %>%
+  inner_join(colors_df) %>%
+  mutate(Paradigm = paste0(Paradigm, "-", Color)) %>%
+  select(Paradigm, Description, Metaphor, Breakthroughs, Examples) %>%
+  kable(booktabs = TRUE, caption = "Organizational Cultures",
+        col.names = c("Paradigm", "Description", "Guiding Metaphor", "Key Breakthroughs",
+                      "Current Examples"), escape = TRUE, format = "html") %>%
+  row_spec(1, background = "red") %>%
+  row_spec(2, background = "#FFBF00") %>%
+  row_spec(3, background = "orange") %>%
+  row_spec(4, background = "green") %>%
+  row_spec(5, background = "#008080")
+```
 
 ## 3. Culture Limits Level
 
