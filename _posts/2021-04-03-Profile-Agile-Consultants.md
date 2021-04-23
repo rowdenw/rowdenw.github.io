@@ -41,7 +41,7 @@ This comparison could prompt multiple questions for further research:
   - Is the difference between samples significant?
   - The inclination to find out about one’s own personality make-up via testing rarely occurs before the Achiever stage, with Conformer and Expert stages not requesting feedback.[^2] Is the variation in samples due to self-selection?
   - Development can occur when the interpersonal environment disconfirms expectations characteristic of a specific stage.[^1] Does this environment vary across national cultures?
-  - Prior to the Achiever stage, role-taking experiences can facilitate development,[^1] and the Co-Creator stage enjoys a variety of roles.[^3] Does the variety of engagements in consulting work provide these role-taking experiences?
+  - Prior to the Achiever stage, perspective- and role-taking experiences can facilitate development,[^1] and the Co-Creator stage enjoys a variety of roles.[^3] Does the variety of engagements in consulting work provide these perspective- and role-taking experiences?
   - Post-conventional personalities–at the Catalyst, Co-Creator, and Synergist stages–don’t often remain long in large corporations.[^4] Does this reduce the prevalence of these stages among managers and supervisors?
 
 ## Agile Consultants
@@ -365,7 +365,7 @@ Note that this small sample has a later mode (Catalyst) than previous larger stu
 
 My intent in interviewing, selecting, profiling, and providing feedback to Agile consultants was a transforming team, not rigorous statistical results. Nevertheless the results suggest that the following may, indeed, encourage growth:
 
-  - role-taking experiences, such as those provided by consulting engagements;
+  - perspective- and role-taking experiences, such as those provided by consulting engagements;
   - a community that values feedback, like the Agile movement; and
   - accepting, welcoming, or even inviting direct personal feedback on a team.
 
