@@ -51,7 +51,7 @@ Cook-Greuter worked with Torbert and [Elaine Herdman-Barker](https://www.gla.glo
 
 ## Master Trait
 
-These decades of application and research have shown developmental stage to be a "master trait" second only to intelligence in determining measurable psychological differences.[^5] And while it is related to intelligence--with a moderate positive correlation of .13 to .46 in 10 out of 15 studies--it is, however, different. Development stage affects four domains:[^15]
+These decades of application and research have shown developmental stage to be a "master trait" second only to intelligence in determining measurable psychological differences.[^5] It is related to intelligence--with a moderate positive correlation of .13 to .46 in 10 out of 15 studies. However, development and intelligence are conceptually and functionally distinct concepts.[^19] Development stage affects four domains:[^15]
 
 * character development (impulse control and moral development),
 * cognitive style,
