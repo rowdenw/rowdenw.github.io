@@ -7,7 +7,7 @@ output:
       - "--wrap=preserve"
 always_allow_html: true
 knit: (function(inputFile, encoding) {
-  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_drafts") })
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../_posts") })
 author: "William C. Rowden"
 discussion_id: Development+Culture
 excerpt: 
@@ -22,7 +22,6 @@ title: Development and Culture
 library(knitr)
 library(kableExtra)
 library(tidyverse)
-# library("ggthemes")
 
 base_dir <- "~/Documents/GitHub/rowdenw.github.io"
 base_url <- "/"
@@ -33,7 +32,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(fig.path = fig_path,
                       cache.path = '../_cache/',
                       message=FALSE, warning=FALSE,
-                      cache = FALSE) # Change to TRUE for publication.
+                      cache = TRUE) # Change to TRUE for publication.
 ```
 
 How might `[developing]({% post_url 2021-04-07-Comment-Agile-Consultants %})`{=markdown} `[consultants]({% post_url 2021-04-03-Profile-Agile-Consultants %})`{=markdown}, decision-makers, researchers, and strategists that are `[Catalyst]({% post_url 2021-04-09-Note-on-Names %})`{=markdown}--or `[post-logical]({% post_url 2021-03-14-Grown-Up-Thinking %})`{=markdown} stages--and working on major problems--like `[climate change]({% post_url 2021-03-20-Think-Anthropocene %})`{=markdown}--help increase the probability of `[survival of intelligent life]({% post_url 2021-01-26-Estimate-Galactic-ETI %})`{=markdown}? How can individuals affect the course of civilization?
@@ -42,7 +41,7 @@ Groups of related individuals interacting can be studied as a system, with *cult
 
 1. Leaders transform organizational culture;
 2. Leader level shapes organizational culture;
-3. Leading edge shapes society's culture; or
+3. Leading edge shapes society's culture; and
 4. Culture limits level.
 
 ## 1. Leaders Transform Organizational Culture
@@ -106,7 +105,7 @@ cultures_df %>%
 
 ## 3. Leading Edge Shapes Society's Culture
 
-Ken Wilber hypothesizes that whenever the leading edge of development becomes around 10 percent of the population, major changes occur throughout the overall population, as new values saturate the culture and 10 percent turns out to be an important "tipping point."`[^7]`{=markdown} However, when showing [manager and consultant stage data]({% post_url 2021-04-07-Comment-Agile-Consultants %}), Susanne Cook-Greuter notes that 10 percent is not a robust estimate from data, but more of a hunch--and a hope.`[^8]`{=markdown}
+Ken Wilber hypothesizes that whenever the leading edge of development becomes around 10 percent of the population, major changes occur throughout the overall population, as new values saturate the culture and 10 percent turns out to be an important "tipping point."`[^7]`{=markdown} However, when showing `[manager and consultant stage data]({% post_url 2021-04-07-Comment-Agile-Consultants %})`{=markdown}, Susanne Cook-Greuter notes that 10 percent is not a robust estimate from data, but more of a hunch--and a hope.`[^8]`{=markdown}
 
 
 ## 4. Culture Limits Level
