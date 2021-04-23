@@ -36,24 +36,24 @@ knitr::opts_chunk$set(fig.path = fig_path,
                       cache = FALSE) # Change to TRUE for publication.
 ```
 
-How might `[developing]({% post_url 2021-04-07-Comment-Agile-Consultants %})`{=markdown} `[Catalyst]({% post_url 2021-04-09-Note-on-Names %})`{=markdown} or `[post-logical]({% post_url 2021-03-14-Grown-Up-Thinking %})`{=markdown} `[consultants]({% post_url 2021-04-03-Profile-Agile-Consultants %})`{=markdown}, decision-makers, researchers, and strategists working on major problems--like `[climate change]({% post_url 2021-03-20-Think-Anthropocene %})`{=markdown}--help increase the probability of `[survival of intelligent life]({% post_url 2021-01-26-Estimate-Galactic-ETI %})`{=markdown}? How can individuals affect the course of civilization?
+How might `[developing]({% post_url 2021-04-07-Comment-Agile-Consultants %})`{=markdown} `[consultants]({% post_url 2021-04-03-Profile-Agile-Consultants %})`{=markdown}, decision-makers, researchers, and strategists that are `[Catalyst]({% post_url 2021-04-09-Note-on-Names %})`{=markdown}--or `[post-logical]({% post_url 2021-03-14-Grown-Up-Thinking %})`{=markdown} stages--and working on major problems--like `[climate change]({% post_url 2021-03-20-Think-Anthropocene %})`{=markdown}--help increase the probability of `[survival of intelligent life]({% post_url 2021-01-26-Estimate-Galactic-ETI %})`{=markdown}? How can individuals affect the course of civilization?
 
-Groups of related individuals interacting can be studied as a system, with *culture* as the macroscopic description. For any complex system, the macroscopic concepts cannot be derived from fundamental interactions.[^a] However, experience and study have resulted in a number of hypotheses about the relationship between individual `[stage of vertical development]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} and broader culture:
+Groups of related individuals interacting can be studied as a system, with *culture* as the macroscopic description. For any complex system, the macroscopic concepts cannot be derived from fundamental interactions.`[^1]`{=markdown} However, experience and study have resulted in a number of hypotheses about the relationship between individual `[stage of vertical development]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} and broader culture:
 
 1. Leaders transform organizational culture;
 2. Leader level shapes organizational culture;
-3. **Culture Limits Level**: Most people grow rapidly through `[development stages]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} into adolescence and then plateau in early adulthood.[^e]
-4. **Leading Edge Shapes Society's Culture**: "This 10 percent turns out to be an important 'tipping point.'"[^d]
+3. Leading edge shapes society's culture; or
+4. Culture limits level.
 
 ## 1. Leaders Transform Organizational Culture
 
 The hypothesis with the most evidence is that the hidden variable, and significant factor, in predicting whether and how an organization transforms (predicting 59% of the variance) is the stage of the organization’s leader and lead consultant:
 
-> The ten organization study found that adding together the performance of each organization’s CEO and lead consultant predicted 59% of the variance, beyond the .01 level, in whether and how the organization transformed (as rated by three scorers who achieved between .90 and 1.0 reliability)…. In short, in these ten cases the development action-logic of the CEOs and their lead consultants emerged as the single largest cause in whether or not the organization transformed.[^c]
+> The ten organization study found that adding together the performance of each organization’s CEO and lead consultant predicted 59% of the variance, beyond the .01 level, in whether and how the organization transformed (as rated by three scorers who achieved between .90 and 1.0 reliability)…. In short, in these ten cases the development action-logic of the CEOs and their lead consultants emerged as the single largest cause in whether or not the organization transformed.`[^2]`{=markdown}
 
-Of thousands of professionals, only the most developed 15% of managers show the consistent capacity to innovate and to successfully transform their organizations.[^f] These managers move beyond gaining stakeholder buy-in to developing stakeholder relationships in which shared goals/outcomes are identified and aligned on. Continued personal work results in their development of greater empathy—improving their awareness of conflicting interests and their ability to transform conflicts into mutually-beneficial outcomes.[^g] They become increasingly aware of and able to inquire about their own effectiveness, and increasingly able to act in ways that build trust and commitment rather than erode it:
+Of thousands of professionals, only the most developed 15% of managers show the consistent capacity to innovate and to successfully transform their organizations.`[^3]`{=markdown} These managers move beyond gaining stakeholder buy-in to developing stakeholder relationships in which shared goals/outcomes are identified and aligned on. Continued personal work results in their development of greater empathy—improving their awareness of conflicting interests and their ability to transform conflicts into mutually-beneficial outcomes.`[^4]`{=markdown} They become increasingly aware of and able to inquire about their own effectiveness, and increasingly able to act in ways that build trust and commitment rather than erode it:
 
-> This is so because only at these late action-logics do people regularly (and more and more intensively) inquire about and transform their own action for greater efficacy, and also because only at late action-logics do people seek to exercise shared-commitement-enhancing, mutually-transforming powers, not just unilaterally-forcing types of power that gradually erode others' trust and commitment.[^c]
+> This is so because only at these late action-logics do people regularly (and more and more intensively) inquire about and transform their own action for greater efficacy, and also because only at late action-logics do people seek to exercise shared-commitement-enhancing, mutually-transforming powers, not just unilaterally-forcing types of power that gradually erode others' trust and commitment.`[^2]`{=markdown}
 
 ## 2. Leader Level Shapes Organizational Culture
 
@@ -61,7 +61,7 @@ Frederic Laloux hypothesizes that the leader level shapes organizational culture
 
 > What determines which stage an organization operates from? It is the stage through which its leadership tends to look at the world. Consciously or unconsciously, leaders put in place organizational structures, practices, and cultures that make sense to them, that correspond to their way of dealing with the world. This means that an organization cannot evolve beyond its leadership’s stage of development.
 
-Specifically, organizations created by different leaders operate on different paradigms. For these paradigms, Laloux uses the color system from Integral Theory.[^b]
+Specifically, organizations created by different leaders operate on different paradigms. For these paradigms, Laloux uses the color system from Integral Theory.`[^5]`{=markdown}
 
 ```{r Level+Paradigm, echo=FALSE}
 paradigms_path <- file.path(base_dir, "_data", "Paradigms.csv")
@@ -83,7 +83,7 @@ paradigms_df %>%
   row_spec(6, background = "#008080")
 ```
 
-Laloux provides guiding metaphors, values, key breakthroughs, and example organizations for each of these paradigms.
+Laloux provides guiding metaphors, values, key breakthroughs, and example organizations for each of these paradigms.`[^6]`{=markdown}
 
 ```{r Clues, echo=FALSE}
 colors_df <- paradigms_df %>%
@@ -104,17 +104,27 @@ cultures_df %>%
   row_spec(5, background = "#008080")
 ```
 
-## 3. Culture Limits Level
+## 3. Leading Edge Shapes Society's Culture
 
-## 4. Leading Edge Shapes Society's Culture
+Ken Wilber hypothesizes that whenever the leading edge of development becomes around 10 percent of the population, major changes occur throughout the overall population, as new values saturate the culture and 10 percent turns out to be an important "tipping point."`[^7]`{=markdown} However, when showing [manager and consultant stage data]({% post_url 2021-04-07-Comment-Agile-Consultants %}), Susanne Cook-Greuter notes that 10 percent is not a robust estimate from data, but more of a hunch--and a hope.`[^8]`{=markdown}
+
+
+## 4. Culture Limits Level
+
+Most people grow rapidly through `[development stages]({% post_url 2021-03-07-What-Is-Growing-Up %})`{=markdown} into adolescence and then plateau in early adulthood, for some reason slowing down long before reaching the upper stages of maturity. One potential reason for this is the absence of any further interpersonal environments that disconfirm expectations at the plateau, the way secondary education or college can disconfirm expectations prior to the plateau.`[^9]`{=markdown} More broadly, I hypothesize that a society's dynamics, institutions, traditions, etc. reinforce the current mode of development, and don't support growth beyond the conventional.
+
+## Research Ideas
+
+Each of the hypotheses above can be tested by further quantitative analysis of empirical data in social science, using adult development research to model cultural and leadership development in human populations over time. The results could inform efforts to enable human societies to survive and thrive.
 
 ## Notes
 
-[^a]: See for example Gu, M.; Weedbrook, C.; Perales, A.; Nielsen, M.A. (2009) More Really Is Different. *Physica D: Nonlinear Phenomena* , *238*, 835–839, doi: [10.1016/j.physd.2008.12.016](https://doi.org/10.1016/j.physd.2008.12.016).    
-[^b]: Laloux, F.; Wilber, K. _Reinventing Organizations: A Guide to Creating Organizations Inspired by the Next Stage in Human Consciousness_; 1st edition.; Nelson Parker: Brussels, 2014; [ISBN 978-2-9601335-0-9](https://isbn.nu/9782960133509).
-[^c]: Torbert, W.R. (2013) [Listening into the Dark: An Essay Testing the Validity and Efficacy of Collaborative Developmental Action Inquiry for Describing and Encouraging Transformations of Self, Society, and Scientific Inquiry](https://integral-review.org/issues/vol_9_no_2_torbert_listening_into_the_dark.pdf). _Integral Review_  *9*, 36.
-[^d]: Wilber, K. (2017) _[The Religion of Tomorrow: A Vision for the Future of the Great Traditions - More Inclusive, More Comprehensive, More Complete](https://smile.amazon.com/Religion-Tomorrow-Traditions-Inclusive-Comprehensive-ebook/dp/B01MQZIOV3/)_. Shambhala.
-[^e]: Cohn, L.D. (1998) Age trends in personality development: A quantitative review. In _Personality development: Theoretical, empirical, and clinical investigations of Loevinger’s conception of ego development_; Lawrence Erlbaum Associates Publishers: Mahwah, NJ, US; pp. 133–143 [ISBN 978-0-8058-1649-5](https://isbn.nu/9780805816495).
-[^f]: Rooke, D.; Torbert, W.R. (April 1 2005) [Seven Transformations of Leadership](https://hbr.org/2005/04/seven-transformations-of-leadership). _Harvard Business Review_.
-[^g]: Joiner, W.B.; Josephs, S.A. (2006) _Leadership Agility: Five Levels of Mastery for Anticipating and Initiating Change_; 1st edition.; Jossey-Bass: San Francisco; [ISBN 978-0-7879-7913-3](https://isbn.nu/9780787979133).
-
+`[^1]`{=markdown}: See for example Gu, M.; Weedbrook, C.; Perales, A.; Nielsen, M.A. (2009) More Really Is Different. *Physica D: Nonlinear Phenomena* , *238*, 835–839, doi: [10.1016/j.physd.2008.12.016](https://doi.org/10.1016/j.physd.2008.12.016).    
+`[^2]`{=markdown}: Torbert, W.R. (2013) [Listening into the Dark: An Essay Testing the Validity and Efficacy of Collaborative Developmental Action Inquiry for Describing and Encouraging Transformations of Self, Society, and Scientific Inquiry](https://integral-review.org/issues/vol_9_no_2_torbert_listening_into_the_dark.pdf). _Integral Review_  *9*, 36.
+`[^3]`{=markdown}: Rooke, D.; Torbert, W.R. (April 1 2005) [Seven Transformations of Leadership](https://hbr.org/2005/04/seven-transformations-of-leadership). _Harvard Business Review_.
+`[^4]`{=markdown}: Joiner, W.B.; Josephs, S.A. (2006) _Leadership Agility: Five Levels of Mastery for Anticipating and Initiating Change_; 1st edition.; Jossey-Bass: San Francisco; [ISBN 978-0-7879-7913-3](https://isbn.nu/9780787979133).
+`[^5]`{=markdown}: Laloux, F.; Wilber, K. _Reinventing Organizations: A Guide to Creating Organizations Inspired by the Next Stage in Human Consciousness_; 1st edition.; Nelson Parker: Brussels, 2014; [ISBN 978-2-9601335-0-9](https://isbn.nu/9782960133509).
+`[^6]`{=markdown}: Laloux, F. (2015) [The Future of Management Is Teal](https://www.strategy-business.com/article/00344?gko=30876). _strategy+business_.
+`[^7]`{=markdown}: Wilber, K. (2017) _[The Religion of Tomorrow: A Vision for the Future of the Great Traditions - More Inclusive, More Comprehensive, More Complete](https://smile.amazon.com/Religion-Tomorrow-Traditions-Inclusive-Comprehensive-ebook/dp/B01MQZIOV3/)_. Shambhala.
+`[^8]`{=markdown}: Cook-Greuter, S.R. (2013) [Nine Levels Of Increasing Embrace In Ego Development: A Full-Spectrum Theory Of Vertical Growth And Meaning Making](http://www.cook-greuter.com/Cook-Greuter%209%20levels%20paper%20new%201.1'14%2097p%5B1%5D.pdf). *Prepublication version*, 97.
+`[^9]`{=markdown}: Cohn, L.D. (1998) Age trends in personality development: A quantitative review. In _Personality development: Theoretical, empirical, and clinical investigations of Loevinger’s conception of ego development_; Lawrence Erlbaum Associates Publishers: Mahwah, NJ, US; pp. 133–143 [ISBN 978-0-8058-1649-5](https://isbn.nu/9780805816495).
