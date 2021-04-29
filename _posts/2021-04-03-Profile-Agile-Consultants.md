@@ -378,5 +378,5 @@ My intent in interviewing, selecting, profiling, and providing feedback to Agile
 [^5]: Kent Beck, et al. (2001) [Manifesto for Agile Software Development](https://agilemanifesto.org/).
 [^6]: Moen, R.D.; Norman, C.L. (2010) [Circling Back](http://www.apiweb.org/circling-back.pdf). *Quality Progress* *43*, 22–28.
 [^7]: Cook‐Greuter, S.R. (2004) Making the Case for a Developmental Perspective. *Industrial and Commercial Training* *36*, 275–281, doi [10.1108/00197850410563902](https://doi.org/10.1108/00197850410563902).
-[^8]: Argyris, C.; Schon, D.A. (1974) *Theory in Practice: Increasing Professional Effectiveness*; 1st edition.; Jossey-Bass Publishers: San Francisco; [ISBN 978-0-87589-230-6](https://isbn.nu/9780875892306).
+[^8]: Argyris, C.; Schön, D.A. (1974) *Theory in Practice: Increasing Professional Effectiveness*; 1st edition.; Jossey-Bass Publishers: San Francisco; [ISBN 978-0-87589-230-6](https://isbn.nu/9780875892306).
 [^9]: Including my profile, my estimate matched the profile four times, was mismatched by one-third stage five times, was mismatched by 1 stage one time, was mismatched by 4/3 stages two times, and was mismatched by 2 stages one time.
