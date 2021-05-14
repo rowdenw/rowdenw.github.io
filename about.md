@@ -11,13 +11,15 @@ permalink: /about/
 
 ## William
 
+Through me, the universe wonders at itself (and watches itself wondering), until my great disappearance.
+
 During the workday I coach and consult to enterprise transformation leaders, fostering teams, and mentoring and developing coaches. I am certified to debrief the [Leadership Circle Profile](https://leadershipcircle.com/en/products/leadership-circle-profile/), an [advanced practitioner](https://www.gla.global/about/certified-global-leadership-coaches/certified-coaches-in-the-us-and-canada/) of the [Global Leadership Profile](https://www.gla.global/the-glp-overview/), and [trained to facilitate Immunity to Change workshops](https://mindsatwork.com/programs-services/coach-development/facilitators-workshop/). More details are in my [online CV]({% link cv.html %}).
 
 In mornings and evenings I am a mindfulness practitioner. I am also a lifelong learner, learning about language, people, and philosophy; and reading about economics, mysticism, religion, and spirituality.
 
 On the weekends I like to reflect and write about the past and the future. On leave I travel across cultures--especially Spanish-speaking countries like Spain--appreciating architecture (for example, Alhambra, Chichén Itzá, and the Taj Mahal), forests, landscapes, parks, wildlife, etc.
 
-## Feedback on Global Leadership Profile Debrief
+## Global Leadership Profile
 
 Those with whom I have debriefed the Global Leadership profile have provided this feedback:
 
